@@ -49,23 +49,24 @@ header{
 
 /* fim da estilização do menu hamburguer */ 
 
-.home-sobre{
+.nav-list{
     display: flex;
     align-items: center;
+    margin-left: 40px;
     
 }
-.home-sobre ul{
+.nav-list ul{   
     list-style: none;
     display: flex;
 }
-.home-sobre ul li{
-    margin-right: 60px;
+.nav-list ul li{
+    margin-right: 50px;
 }
-.home-sobre ul li a{
+.nav-list ul li a{
     text-decoration: none;
     color: #fff;
 }
-.home-sobre ul li a:hover{
+.nav-list ul li a:hover{
     color:turquoise;
     font-size: 30px;
 }
@@ -80,6 +81,7 @@ header{
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    cursor: pointer;
     
 }
 .borda-pesquisa{
@@ -92,6 +94,7 @@ header{
     width: 35px;
     margin-top: 45px;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .cartao-visita-digital{
@@ -354,39 +357,38 @@ header{
     margin-top: -60px;  
 }
 @media (max-width: 600px){
-    header{
-        height: 15vw;
-    }
-
-    #logo-cliente{
-        width: 10vw;
-        height: 10vw;
-        margin-left: 1vw;
-        margin-top: 1vw;
-    }
-
+    
     .hamburguer{
-        display: block; /*mostra ícone do menu hamburguer*/
-        margin-left: 1vw;
+        display: block; /*mostra o ícone do menu hamburguer*/
+        margin-left: 5vw;
     }
 
-    .home-sobre ul{
-        flex-direction: column; /* coloca os links do menu em coluna */ 
-        align-items: center; /* centraliza os links na vertical */
+    .nav-list ul{
+        display: none;
     }
+    
+   .barra-pesquisa{
+        width: 20vw;
+    
+   }
 
-    .barra-pesquisa{
-        margin-top: 1vw; /* ajusta a margem superior da barra de pesquisa */
-    }
+   .borda-pesquisa{
+        width: 30vw;
+    
+   }
 
-    .borda-pesquisa{
-        width: 25vw; /* reduz a largura da barra de pesquisa */
-    }
+   #logo-cliente{
+        margin-left: 3vw;
+        height: 14vh;
+   }
 
-    #img-carrinho{
-        margin-top: 1vw; 
-        margin-left: 1vw;
-    }
+   #img-carrinho{
+        margin-left: 23vw;
+    
+   }
 
+   .mobile-menu{
+        display: none;
+   }
 
 }
