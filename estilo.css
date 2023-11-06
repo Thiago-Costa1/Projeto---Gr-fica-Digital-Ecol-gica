@@ -23,7 +23,7 @@ header{
 #logo-cliente{
     width: 100px;
     height: 100px;
-    margin-left: 112px;
+    margin-left: 145px;
     margin-top: 10px;
 }
  
@@ -98,7 +98,7 @@ header{
 }
 
 .cartao-visita-digital{
-    margin-left: 118px;
+    margin-left: 153px;
     margin-top: 27px;
 }
 .produtos-cartoes{
@@ -187,16 +187,16 @@ header{
     width: 200px;
 } 
 .banner, .itens-utilitarios{
-    margin-left: 118px;
+    margin-left: 153px;
     margin-top: 20px;
 }
 
 .sobre{
     display: flex;
     height: 300px;
-    width: 1287px; 
+    width: 1280px;  
     margin-top: 80px;
-    margin-left: 105px; 
+    margin-left: 145px; 
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
@@ -215,9 +215,9 @@ header{
 .api{
     display: flex;
     height: 360px;
-    width: 1287px;
+    width: 1280px;
     margin-top: 80px;
-    margin-left: 105px;
+    margin-left: 145px;
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
     
@@ -238,10 +238,10 @@ header{
     
 }
 .contato{
-    height: 350px;
-    width: 1287px; 
+    height: 350px; 
+    width: 1280px; 
     margin-top: 80px;
-    margin-left: 105px;
+    margin-left: 145px;
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
@@ -309,7 +309,7 @@ header{
 }
 .rodape li{
     font-size: 22px;
-    margin-left: 143px;
+    margin-left: 165px;
     margin-top: 10px;
     width: 100px;
 }
@@ -324,6 +324,7 @@ header{
 .rodape-imagens{
     display: flex;
     justify-content: center;
+    
 
 }
 .rodape-imagens img{
@@ -345,16 +346,14 @@ header{
     font-size: 15px;
     justify-content: right;
     margin-right: 250px;
-    margin-top: -40px;
+    margin-top: -30px;
 }
-.icone-copyright{
-    margin-top: -3px   
-}
+
 #setas{
     height: 30px;
     width: 30px;
-    margin-left: 1420px;
-    margin-top: -60px;  
+    margin-left: 1385px;
+    margin-top: -40px;  
 }
 @media (max-width: 600px){
     
