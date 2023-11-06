@@ -93,7 +93,7 @@ header{
     height: 35px;
     width: 35px;
     margin-top: 45px;
-    margin-left: 40px;
+    margin-left: 65px;
     cursor: pointer;
 }
 
@@ -117,7 +117,7 @@ header{
     border:1px solid #ccc;
     margin-top: 30px;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 15px;
     display: inline-block;;
     border-radius: 15px;
     box-sizing: border-box;
@@ -194,9 +194,9 @@ header{
 .sobre{
     display: flex;
     height: 300px;
-    width: 1340px; 
+    width: 1287px; 
     margin-top: 80px;
-    margin-left: 118px; 
+    margin-left: 105px; 
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
@@ -215,9 +215,9 @@ header{
 .api{
     display: flex;
     height: 360px;
-    width: 1340px;
+    width: 1287px;
     margin-top: 80px;
-    margin-left: 118px;
+    margin-left: 105px;
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
     
@@ -239,16 +239,16 @@ header{
 }
 .contato{
     height: 350px;
-    width: 1340px; 
+    width: 1287px; 
     margin-top: 80px;
-    margin-left: 118px;
+    margin-left: 105px;
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
 #descricao-formulario{
     font-size: 28px;
     padding-top: 30px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .formulario-nome{
     font-size: 25px;
