@@ -11,10 +11,189 @@ body{
     color: rgb(0,0,0);
     background-color: #ccc;
 }
-header{
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  
+header {
+    background-color: rgb(14, 6, 59);
+    background-image: linear-gradient(to right, rgb(14, 6, 59), pink     );
+    padding-inline: 16px;
+    height: 120px;
+    
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+#logo-cliente{
+    width: 100px;   
+    height: 100px;
+    margin-top: 48px;
+}
+  
+  .nav-list ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-top: 45px;
+    margin-right: 550px;
+    
+  }
+  
+  .nav-list a {
+    font-size: 35px;
+    color: #fff;
+    padding-block: 16px;
+  }
+ 
+  .nav-list li a:hover{
+    color:turquoise;
+    font-size: 30px;
+}
+  
+.barra-pesquisa{
+    display: flex;
+    height: 25px;
+    margin-left: 880px;
+    margin-top: -25px;
+}
+.lupa-pesquisa{
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.borda-pesquisa{
+    border-radius: 25px;
+    padding-left: 25px;
+    width: 390px;  
+}
+.img-carrinho{
+    height: 35px;
+    width: 35px;
+    margin-left: 47px;
+    margin-top: -3px;
+    cursor: pointer;
+} 
+
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 750px) {
+
+    .img-carrinho{
+        margin-right: 28vw;
+        
+    }
+
+
+
+    .hamburger {
+      display: block;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 50vh;
+      clip-path: circle(53px at 90% -15%);
+      transition: 1s ease-out;
+      background: rgb(131, 85, 204);
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+    
+      pointer-events: none;
+    }
+
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*header{
     width: 100%;
     display: flex;
-    /*background-color: rgb(14, 6, 59);*/
+    /*background-color: rgb(14, 6, 59);
     background-image: linear-gradient(to right, rgb(14, 6, 59), pink     );
     height: 120px;
     font-size: 35px;
@@ -27,16 +206,16 @@ header{
     margin-top: 10px;
 }
  
-/* início da estilização do menu hamburguer */ 
+/* início da estilização do menu hamburguer 
 
 .hamburguer{
-    display: none; /* esconde no desktop */
+    display: none; /* esconde no desktop
     height: 3px;
     margin: 50px 0;
-    border: none;     /* remove a borda padrão*/
-    background: none; /* remove o background padrão*/
-    border-top: 3px solid #fff; /* esse é o 1º tracinho branco dos 3 tracinhos do hamburguer */
-    cursor: pointer; /* a setinha do mouse vira uma mãozinha quando o usuário passar em cima do hamburguer */
+    border: none;     /* remove a borda padrão
+    background: none; /* remove o background padrão
+    border-top: 3px solid #fff; /* esse é o 1º tracinho branco dos 3 tracinhos do hamburguer 
+    cursor: pointer; /* a setinha do mouse vira uma mãozinha quando o usuário passar em cima do hamburguer 
 }
 .hamburguer::before, .hamburguer::after {
     content: " ";
@@ -47,7 +226,7 @@ header{
     margin-top: 5px;
 }
 
-/* fim da estilização do menu hamburguer */ 
+/* fim da estilização do menu hamburguer  
 
 .nav-list{
     display: flex;
@@ -95,7 +274,7 @@ header{
     margin-top: 45px;
     margin-left: 65px;
     cursor: pointer;
-}
+} */
 
 .cartao-visita-digital{
     margin-left: 153px;
@@ -355,10 +534,10 @@ header{
     margin-left: 1385px;
     margin-top: -40px;  
 }
-@media (max-width: 600px){
+/*@media (max-width: 600px){
     
     .hamburguer{
-        display: block; /*mostra o ícone do menu hamburguer*/
+        display: block; /*mostra o ícone do menu hamburguer
         margin-left: 5vw;
     }
 
@@ -390,4 +569,4 @@ header{
         display: none;
    }
 
-}
+}*/
