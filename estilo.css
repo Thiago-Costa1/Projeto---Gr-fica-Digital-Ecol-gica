@@ -37,21 +37,26 @@ header {
     width: 100px;   
     height: 100px;
     margin-top: 48px;
+    margin-left: 135px;
 }
-  
+
   .nav-list ul{
     display: flex;
     gap: 40px;
     list-style: none;
     margin-top: 45px;
-    margin-right: 550px;
+    margin-right: 680px;
     
+    
+  }
+  #favoritos{
+      display: none;
   }
   
   .nav-list a {
     font-size: 35px;
     color: #fff;
-    padding-block: 16px;
+    
   }
  
   .nav-list li a:hover{
@@ -108,24 +113,40 @@ header {
   
   @media (max-width: 750px) {
 
-    .img-carrinho{
-        margin-right: 28vw;
-        
-    }
    
     .hamburger {
+    margin-top: 6vh;
       display: block;
       z-index: 1;
     }
 
-    .barra-pesquisa
-    {
-        margin-left:10px;
-        margin-top:-18px;
-        top:-18px;
-        left:10px;
+    #logo-cliente{
+        margin-left: 2vw;
     }
+
   
+    .barra-pesquisa{
+        width: 1vw;
+        margin-left: 35vw;
+        
+    
+   }
+
+   #favoritos{
+       display: block;
+   }
+
+   #id-carrinho{
+       display: none;
+       
+   }
+
+   .borda-pesquisa{
+        width: 45vw;
+    
+   }
+
+
     .nav-list {
       position: fixed;
       top: 0;
@@ -187,6 +208,49 @@ header {
       transform: rotate(-135deg);
       top: -7px;
     }
+
+    #section-sobre {
+        width: 100%;
+        margin-left: 0vw;
+        display: table;
+      }
+      
+      
+    #h1-titulo {
+        font-size: 5vh;
+        text-align: center;
+        margin-top: -14vh;
+        margin-left: 0vw;
+        
+      }
+
+    #h2-texto{
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+
+
+
+       
+    #section-api{
+        width: 100%;
+        margin-left: 0vw;
+    }
+    
+
+    .api-posicionamento{
+        height: 10vh;
+        width: 10vw;
+        
+    }
+
+    #iframe-api{
+        margin-left: 1vw;
+    }
+
+
+
+
   }
 
 
@@ -389,13 +453,13 @@ header {
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
-#sobre-titulo{
+.sobre h1{
     font-size: 40px;
     margin-left: 120px;
     padding-top: 130px;
     
 }
-#sobre-texto{
+.sobre h2{
     font-size: 26px;
     margin-top: 105px;
     margin-left: 90px;
@@ -411,13 +475,11 @@ header {
     border-radius: 10px;
     
 }
-.api-funcionando{
-    margin-left: 120px;
 
-}
 .api-posicionamento{
     margin-top: 30px;
     height: 300px;
+    margin-left: 120px;
 }
 .visite-nos{
     display: flex;
