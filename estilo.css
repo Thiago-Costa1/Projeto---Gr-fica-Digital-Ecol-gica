@@ -12,6 +12,9 @@ body{
     background-color: #ccc;
 }
 
+
+/* Inicío do cabeçalho */
+ 
 a {
     font-family: sans-serif;
     text-decoration: none;
@@ -110,9 +113,28 @@ header {
     position: relative;
     transition: 0.3s;
   }
-  
-  @media (max-width: 750px) {
 
+  /* Fim do cabeçalho (header) */
+
+
+  .contato-dentro
+  {
+      display:table;
+  }
+
+  [class*='col']
+  {
+      width:20%;
+      border:2px solid rgb(0,0,0);
+  }
+  
+  @media (max-width: 750px)
+  /* o padrão é tela desktop - aqui vai assumir quando as telas forem pequenas */
+  {
+    [class*='col']
+    {
+        width:100%;
+    }
    
     .hamburger {
     margin-top: 6vh;
@@ -253,119 +275,14 @@ header {
         
     }
 
-
-
-
-
     #section-contato{
         width: 100%;
         margin-left: 0vw;
         height: auto;
-        
     }
 
 
-
-
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-/*header{
-    width: 100%;
-    display: flex;
-    /*background-color: rgb(14, 6, 59);
-    background-image: linear-gradient(to right, rgb(14, 6, 59), pink     );
-    height: 120px;
-    font-size: 35px;
-    
 }
-#logo-cliente{
-    width: 100px;
-    height: 100px;
-    margin-left: 145px;
-    margin-top: 10px;
-}
- 
-/* início da estilização do menu hamburguer 
-
-.hamburguer{
-    display: none; /* esconde no desktop
-    height: 3px;
-    margin: 50px 0;
-    border: none;     /* remove a borda padrão
-    background: none; /* remove o background padrão
-    border-top: 3px solid #fff; /* esse é o 1º tracinho branco dos 3 tracinhos do hamburguer 
-    cursor: pointer; /* a setinha do mouse vira uma mãozinha quando o usuário passar em cima do hamburguer 
-}
-.hamburguer::before, .hamburguer::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin-top: 5px;
-}
-
-/* fim da estilização do menu hamburguer  
-
-.nav-list{
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    
-}
-.nav-list ul{   
-    list-style: none;
-    display: flex;
-}
-.nav-list ul li{
-    margin-right: 50px;
-}
-.nav-list ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.nav-list ul li a:hover{
-    color:turquoise;
-    font-size: 30px;
-}
-.barra-pesquisa{
-    display: flex;
-    margin-top: 50px;
-    height: 25px;
-    
-}
-.lupa-pesquisa{
-    margin-top: 2px;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    
-}
-.borda-pesquisa{
-    border-radius: 25px;
-    padding-left: 25px;
-    width: 390px;  
-}
-#img-carrinho{
-    height: 35px;
-    width: 35px;
-    margin-top: 45px;
-    margin-left: 65px;
-    cursor: pointer;
-} */
 
 .cartao-visita-digital{
     margin-left: 153px;
@@ -516,7 +433,7 @@ header {
     background-color: rgb(94, 181, 221);
     border-radius: 10px;
 }
-#descricao-formulario{
+#h1-descricao-formulario{
     font-size: 28px;
     padding-top: 30px;
     margin-left: 40px;
@@ -544,8 +461,8 @@ header {
 }
 
 .formulario-quadrado{
-    margin-left: 700px;
-    margin-top: -50px;
+    font-size: 25px;
+    margin-top: 80px;
 }
 
 .formulario-quadrado textarea{
@@ -559,12 +476,12 @@ header {
 .formulario-titulo-mensagem{
     font-size: 25px;
     margin-left: 980px;
-    margin-top: -190px;
+    
     
 }
 .formulario-botao{
-    margin-top: 140px;
-    margin-left: 590px;
+    /*margin-top: 140px;*/
+    margin-left: 250px;
 }
 .formulario-botao button{
     font-size: 20px;
@@ -572,6 +489,9 @@ header {
     width: 180px;
     border-radius: 10px;
 }
+
+/* Inicío do rodapé */
+
 .rodape{
     margin-top: 80px;
     width: 100%;
@@ -626,39 +546,6 @@ header {
     margin-left: 1385px;
     margin-top: -40px;  
 }
-/*@media (max-width: 600px){
-    
-    .hamburguer{
-        display: block; /*mostra o ícone do menu hamburguer
-        margin-left: 5vw;
-    }
 
-    .nav-list ul{
-        display: none;
-    }
-    
-   .barra-pesquisa{
-        width: 20vw;
-    
-   }
+/* Fim do rodapé */
 
-   .borda-pesquisa{
-        width: 30vw;
-    
-   }
-
-   #logo-cliente{
-        margin-left: 3vw;
-        height: 14vh;
-   }
-
-   #img-carrinho{
-        margin-left: 23vw;
-    
-   }
-
-   .mobile-menu{
-        display: none;
-   }
-
-}*/

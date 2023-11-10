@@ -33,34 +33,6 @@
         
     </header>
 
-
-
-
-
-
-
-
-
-
-
-        <!-- <img id="logo-cliente" src="imagens/logo-cliente.png" alt="logotipo">
-        <button class="hamburguer"></button>
-        <nav class="nav-list">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#section-sobre">Sobre</a></li>
-                <li><a href="#section-cartao">Produtos</a></li>
-                <li><a href="#section-contato">Contato</a></li>
-            </ul>     
-        </nav>
-        <div class="barra-pesquisa"> 
-            <input class="borda-pesquisa" type="text" placeholder="Barra de pesquisa">
-            <img class="lupa-pesquisa" src="imagens/lupa.png" alt="lupa">
-        </div>
-        <img id="img-carrinho"  src="imagens/img-carrinho.png" alt="carrinho de compras"> -->
-
-    
-
     <main>
         <section class="cartao-visita-digital" id="section-cartao">
             <h1>Cartão de Visita Digital</h1>
@@ -243,7 +215,9 @@
 
         <section class="contato" id="section-contato">
             <form>
-                <h1 id="descricao-formulario">Alguma dúvida, sugestão ou reclamação? Entre em contato conosco! Envie uma mensagem para nós!</h1>
+                <h1 id="h1-descricao-formulario">Alguma dúvida, sugestão ou reclamação? Entre em contato conosco! Envie uma mensagem para nós!</h1>
+                <div class="contato-dentro">
+                <div class="col1">    
                     <div class="formulario-nome">
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" required>
@@ -253,17 +227,19 @@
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email" required>
                     </div>
-    
+                </div>
+                
+                <div class="col2">
                     <div class="formulario-quadrado">
+                        <label for="mensagem">Mensagem:</label>
                         <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
                     </div>
-                    <div class="formulario-titulo-mensagem">
-                        <label for="mensagem">Mensagem:</label>
-                    </div>
-
                     <div class="formulario-botao">
                         <button type="submit">Enviar</button>
                     </div>
+                </div>
+                </div>
+                
             </form>
         </section>
         
