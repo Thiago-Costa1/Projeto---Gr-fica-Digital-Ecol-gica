@@ -13,7 +13,7 @@ body{
 }
 
 
-/* Inicío do cabeçalho */
+/* Início do header (cabeçalho, menu) */
  
 a {
     font-family: sans-serif;
@@ -24,6 +24,7 @@ header {
     background-color: rgb(14, 6, 59);
     background-image: linear-gradient(to right, rgb(14, 6, 59), rgb(197, 59, 167) );
     height: 120px;
+    width: 100%;
     
   }
   
@@ -32,13 +33,13 @@ header {
     height: 70px;
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    
+
   }
   
-    #logo-cliente{
-    width: 100px;   
-    height: 100px;
+    #logo-cliente{   
+    height: 15vh;
     margin-top: 48px;
     margin-left: 135px;
 }
@@ -48,8 +49,7 @@ header {
     gap: 40px;
     list-style: none;
     margin-top: 45px;
-    margin-right: 680px;
-    
+
     
   }
   #favoritos{
@@ -114,36 +114,272 @@ header {
     transition: 0.3s;
   }
 
-  /* Fim do cabeçalho (header) */
+  /* Fim do header */
+  
+
+  /* Início da estilização de todas as seções de produtos */
+
+.cartao-visita-digital{
+    margin-left: 153px;
+    margin-top: 27px;
+}
+
+.imagens {
+    margin-top: 5px;
+    height: 270px;
+    width: 70%;
+    margin-left: -2px;
+}
+#img-estabelecimento{
+    width: 200px;
+} 
+.banner, .itens-utilitarios{
+    margin-left: 153px;
+    margin-top: 20px;
+}
+
+/* Estilizando os cards */
+.card{
+    width:300px;
+    height: 450px;
+    border:1px solid #ccc;
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 15px;
+    display: inline-block;;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.card img{
+    width: 56%;
+    height: 190px;
+}
+.card img:hover{
+    border:10px double black;
+    
+}
+.card h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.card h3:hover{
+    color:yellow;
+}
+.card p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.card button{
+    display: block;
+    margin: 10px;
+    margin-left: 80px;
+    background-image: linear-gradient( to right, aqua, purple);
+    color:#fff;
+    cursor:pointer;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+}
+.card:hover{
+    background-image: linear-gradient( to right, rgb(211, 24, 195), bisque);
+    color: #000;
+    font-weight:700;
+}
+.card button:hover{
+    background-color: aquamarine;
+    color: #000;
+    font-weight:700;
+}
+/* Fim dos cards */
+
+/* Fim da estilização de todas as seções de produtos */
 
 
-  .contato-dentro
+/* Início da estilização da seção Sobre */
+
+.sobre, .api, .contato{
+    display: flex;
+    height: 300px;
+    width: 85%;  
+    margin-top: 80px;
+    margin-left: 145px; 
+    background-color: rgb(94, 181, 221);
+    border-radius: 10px;
+}
+.sobre h1{
+    font-size: 40px;
+    margin-left: 120px;
+    padding-top: 130px;
+    
+}
+.sobre h2{
+    font-size: 26px;
+    margin-top: 105px;
+    margin-left: 90px;
+    margin-right: 55px;
+}
+
+/* Fim da estilização da seção Sobre */
+
+
+/* Início da seção Visite-nos */
+
+.api-posicionamento{
+    height: 260px;
+    margin-top: 20px;
+    margin-left: 115px
+}
+
+.posicionamento-visite h1{
+    font-size:40px;
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+/* Fim da seção Visite-nos */
+
+
+/* Início da seção Contato */
+
+
+.contato-dentro
   {
-      display:table;
+      /* professora deixou esse comando: display:table; */
+      display: table;
+      
+      
   }
 
   [class*='col']
   {
-      width:20%;
-      border:2px solid rgb(0,0,0);
+      width:50%;
+      
+      
   }
-  
-  @media (max-width: 750px)
+
+
+#h1-descricao-formulario{
+    font-size: 28px;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+.formulario-nome{
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 110px;
+}
+.formulario-nome input{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 7px;
+}
+.formulario-email{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 110px;
+}
+.formulario-email input{
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.formulario-quadrado{
+    font-size: 25px;
+    
+}
+
+.formulario-quadrado textarea{
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    resize: none;
+}
+.formulario-botao button{
+    font-size: 20px;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+/* Fim da seção Contato */
+
+
+/* Inicío do rodapé */
+
+.rodape{
+    margin-top: 80px;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(173, 216, 230);
+}
+.rodape li{
+    font-size: 22px;
+    margin-left: 165px;
+    margin-top: 10px;
+    width: 100px;
+}
+.rodape a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav-topicos{
+    padding-top: 30px ;
+    width: 80px;
+}
+.rodape-imagens{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.rodape-imagens img{
+    width: 50px;
+    height: 50px;
+    margin-top: -90px;
+    padding: 10px;
+}
+#rodape-agradecimento{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: -20px;
+    width: auto;
+}
+#rodape-copyright{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: right;
+    margin-right: 250px;
+    margin-top: -30px;
+}
+
+
+
+/* Fim do rodapé */
+
+
+/* Início do Media query */
+
+@media (max-width: 750px)
   /* o padrão é tela desktop - aqui vai assumir quando as telas forem pequenas */
   {
-    [class*='col']
-    {
-        width:100%;
-    }
    
+    /* Início da responsividade do header */
+
     .hamburger {
     margin-top: 6vh;
-      display: block;
-      z-index: 1;
+    display: block;
+    z-index: 1;
+      
     }
 
     #logo-cliente{
         margin-left: 2vw;
+        height: 100%;
     }
 
   
@@ -231,6 +467,25 @@ header {
       top: -7px;
     }
 
+    /* Fim da responsividade do header */
+
+        
+    /* Início da responsividade dos cards */ 
+
+    .cartao-visita-digital, .banner, .itens-utilitarios{
+        margin-left: 20%;
+    }
+
+    .card{
+        margin-left: 0%;
+    }
+
+
+    /* Fim da responsividade dos cards */
+
+
+    /* Início da responsividade da seção Sobre */
+
     #section-sobre {
         width: 100%;
         margin-left: 0vw;
@@ -250,6 +505,11 @@ header {
         margin-top: 4vh;
         margin-left: 15vw;
     }
+
+    /* Fim da responsividade da seção Sobre */
+
+
+    /* Início da responsividade da seção Api (visite-nos) */
        
     #section-api{
         width: 100%;
@@ -275,277 +535,32 @@ header {
         
     }
 
-    #section-contato{
+    /* Fim da responsividade da seção Visite-nos */
+
+
+    /* Início da responsividade da seção Contato */
+
+    .contato-dentro{
+        display: table;
+        width: 100%; 
+    }
+
+    [class*='col']
+    {
+        width:100%;
+    }
+
+    .contato{
         width: 100%;
         margin-left: 0vw;
         height: auto;
     }
 
 
-}
 
-.cartao-visita-digital{
-    margin-left: 153px;
-    margin-top: 27px;
-}
-.produtos-cartoes{
-    display: flex;
-    margin-left: 100px; 
-    width: 100%;
-    height: 400px;
-    border: 3px solid black;
-}
-
-/*estilizando os card*/
-
-.card{
-    width:300px;
-    height: 450px;
-    border:1px solid #ccc;
-    margin-top: 30px;
-    padding: 10px;
-    margin-left: 15px;
-    display: inline-block;;
-    border-radius: 15px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.card img{
-    width: 56%;
-    height: 190px;
-}
-
-.card img:hover{
-    border:10px double black;
-    
-}
-
-.card h3{
-    font-size: 18px;
-    margin-top: 10px;
-}
-.card h3:hover{
-    color:yellow;
-}
-.card p{
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.card button{
-    display: block;
-    margin: 10px;
-    margin-left: 80px;
-    background-image: linear-gradient( to right, aqua, purple);
-    color:#fff;
-    cursor:pointer;
-    width: 130px;
-    height: 50px;
-    border-radius: 20px;
-}
-.card:hover{
-    background-image: linear-gradient( to right, rgb(211, 24, 195), bisque);
-    color: #000;
-    font-weight:700;
-}
-.card button:hover{
-    background-color: aquamarine;
-    color: #000;
-    font-weight:700;
-}
-
-/*final dos cards*/
+    /* Fim da responsividade da seção Contato */
 
 
-.titulo-imagens{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Está linha centraliza verticalmente */
-    text-align: center;   
-}
-.imagens {
-    margin-top: 5px;
-    height: 270px;
-    width: 70%;
-    margin-left: -2px;
-}
-#img-estabelecimento{
-    width: 200px;
-} 
-.banner, .itens-utilitarios{
-    margin-left: 153px;
-    margin-top: 20px;
 }
 
-.sobre{
-    display: flex;
-    height: 300px;
-    width: 1280px;  
-    margin-top: 80px;
-    margin-left: 145px; 
-    background-color: rgb(94, 181, 221);
-    border-radius: 10px;
-}
-.sobre h1{
-    font-size: 40px;
-    margin-left: 120px;
-    padding-top: 130px;
-    
-}
-.sobre h2{
-    font-size: 26px;
-    margin-top: 105px;
-    margin-left: 90px;
-    margin-right: 55px;
-}
-.api{
-    display: flex;
-    height: 300px;
-    width: 1280px;
-    margin-top: 80px;
-    margin-left: 145px;
-    background-color: rgb(94, 181, 221);
-    border-radius: 10px;
-    
-}
-
-.api-posicionamento{
-    height: 260px;
-    margin-top: 20px;
-    margin-left: 115px
-}
-
-.posicionamento-visite h1{
-    font-size:40px;
-    margin-top: 130px;
-    margin-left: 200px;
-}
-
-
-
-
-.contato{
-    height: 350px; 
-    width: 1280px; 
-    margin-top: 80px;
-    margin-left: 145px;
-    background-color: rgb(94, 181, 221);
-    border-radius: 10px;
-}
-#h1-descricao-formulario{
-    font-size: 28px;
-    padding-top: 30px;
-    margin-left: 40px;
-}
-.formulario-nome{
-    font-size: 25px;
-    margin-top: 80px;
-    margin-left: 110px;
-}
-.formulario-nome input{
-    height: 30px;
-    width: 250px;
-    border-radius: 10px;
-    margin-left: 7px;
-}
-.formulario-email{
-    font-size: 25px;
-    margin-top: 10px;
-    margin-left: 110px;
-}
-.formulario-email input{
-    height: 30px;
-    width: 250px;
-    border-radius: 10px;
-}
-
-.formulario-quadrado{
-    font-size: 25px;
-    margin-top: 80px;
-}
-
-.formulario-quadrado textarea{
-    margin-top: -35px;
-    height: 150px;
-    width: 300px;
-    margin-left: 180px;
-    border-radius: 10px;
-    resize: none;
-}
-.formulario-titulo-mensagem{
-    font-size: 25px;
-    margin-left: 980px;
-    
-    
-}
-.formulario-botao{
-    /*margin-top: 140px;*/
-    margin-left: 250px;
-}
-.formulario-botao button{
-    font-size: 20px;
-    height: 50px;
-    width: 180px;
-    border-radius: 10px;
-}
-
-/* Inicío do rodapé */
-
-.rodape{
-    margin-top: 80px;
-    width: 100%;
-    height: 170px;
-    background-color: rgb(173, 216, 230);
-}
-.rodape li{
-    font-size: 22px;
-    margin-left: 165px;
-    margin-top: 10px;
-    width: 100px;
-}
-.rodape a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-.nav-topicos{
-    padding-top: 30px ;
-    width: 80px;
-}
-.rodape-imagens{
-    display: flex;
-    justify-content: center;
-    
-
-}
-.rodape-imagens img{
-    width: 50px;
-    height: 50px;
-    margin-top: -90px;
-    padding: 10px;
-}
-#rodape-agradecimento{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: -20px;
-    width: auto;
-}
-#rodape-copyright{
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    justify-content: right;
-    margin-right: 250px;
-    margin-top: -30px;
-}
-
-#setas{
-    height: 30px;
-    width: 30px;
-    margin-left: 1385px;
-    margin-top: -40px;  
-}
-
-/* Fim do rodapé */
-
+/* Fim do Media query */
