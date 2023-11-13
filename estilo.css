@@ -10,7 +10,8 @@ html{
 }
 body{
     color: rgb(0,0,0);
-    background-color: #ccc;
+    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20), rgb(252, 247, 0), rgb(1, 253, 18));
+
 }
 
 
@@ -238,7 +239,8 @@ header {
     width: 85%;  
     margin-top: 80px;
     margin-left: 145px; 
-    background-color: rgb(94, 181, 221);
+    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20));
+
     border-radius: 10px;
 }
 .sobre h1{
@@ -357,7 +359,7 @@ header {
     margin-top: 80px;
     width: 100%;
     height: 170px;
-    background-color: rgb(173, 216, 230);
+    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246));
 }
 .rodape li{
     font-size: 22px;
@@ -534,7 +536,7 @@ header {
 
 
     .card{
-        margin-left: 0%;
+        margin-left: 0;
         max-width: auto;
     }
 
@@ -561,7 +563,7 @@ header {
 
     #h2-texto{
         margin-top: 4vh;
-        margin-left: 15vw;
+        margin-left: 5vw;
     }
 
     /* Fim da responsividade da seção Sobre */
