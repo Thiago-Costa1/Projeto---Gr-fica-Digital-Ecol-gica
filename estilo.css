@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth; /* rolagem suave */
@@ -31,11 +32,14 @@ header {
   .nav {
     width: 100%;
     height: 70px;
-    margin-inline: auto;
     display: flex;
     align-items: center;
     
 
+  }
+
+  .barra-pesquisa{
+    margin-left: 3%;
   }
   
     #logo-cliente{   
@@ -44,11 +48,14 @@ header {
     margin-left: 135px;
 }
 
+
   .nav-list ul{
     display: flex;
     gap: 40px;
     list-style: none;
     margin-top: 45px;
+    margin-left: 5.5%;
+    
 
     
   }
@@ -70,8 +77,9 @@ header {
 .barra-pesquisa{
     display: flex;
     height: 25px;
-    margin-left: 880px;
-    margin-top: -25px;
+    margin-top: 43px;
+    margin-right: 8%;
+
 }
 .lupa-pesquisa{
     margin-top: 2px;
@@ -84,7 +92,7 @@ header {
 .borda-pesquisa{
     border-radius: 25px;
     padding-left: 25px;
-    width: 390px;  
+    width: 330px;  
 }
 .img-carrinho{
     height: 35px;
@@ -115,13 +123,39 @@ header {
   }
 
   /* Fim do header */
+
+
+  /* Início do carrossel */
+
+  #img_sslide
+		{
+			height:70%; 
+			width:100%;
+			border-radius:20px;
+			box-shadow:2px 4px 12px 3px rgb(100,100,100);
+		}
+	  
+		#carrossel
+		{
+			height:350px; /*altura fixa */
+			width:100%;
+		}
+	  
+		#botoes_slide
+		{
+			margin-left:50%;
+			margin-top: 1%;
+		}
+
+    /* Fim do carrossel */
+
   
 
-  /* Início da estilização de todas as seções de produtos */
+    /* Início da estilização de todas as seções de produtos */
 
 .cartao-visita-digital{
     margin-left: 153px;
-    margin-top: 27px;
+    
 }
 
 .imagens {
@@ -246,7 +280,8 @@ header {
 .contato-dentro
   {
       /* professora deixou esse comando: display:table; */
-      display: table;
+      display: flex;
+      
       
       
   }
@@ -258,6 +293,8 @@ header {
       
   }
 
+  
+
 
 #h1-descricao-formulario{
     font-size: 28px;
@@ -266,42 +303,49 @@ header {
 }
 .formulario-nome{
     font-size: 25px;
-    margin-top: 80px;
-    margin-left: 110px;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 .formulario-nome input{
     height: 30px;
-    width: 250px;
+    width: 45%;
     border-radius: 10px;
     margin-left: 7px;
 }
 .formulario-email{
     font-size: 25px;
     margin-top: 10px;
-    margin-left: 110px;
+    margin-left: 10%;
 }
 .formulario-email input{
     height: 30px;
-    width: 250px;
+    width: 45%;
     border-radius: 10px;
 }
 
 .formulario-quadrado{
     font-size: 25px;
-    
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
 }
 
 .formulario-quadrado textarea{
-    height: 150px;
-    width: 300px;
+    height: 120px;
+    width: 45%;
     border-radius: 10px;
     resize: none;
 }
 .formulario-botao button{
     font-size: 20px;
     height: 50px;
-    width: 180px;
+    width: 30%;
     border-radius: 10px;
+    margin-left: -17%;
+   
+    
 }
 
 /* Fim da seção Contato */
@@ -321,6 +365,12 @@ header {
     margin-top: 10px;
     width: 100px;
 }
+
+.rodape li a:hover{
+    color:rgb(67, 64, 224);
+    font-size: 20px;
+}
+
 .rodape a{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -332,12 +382,12 @@ header {
 .rodape-imagens{
     display: flex;
     justify-content: center;
-    
+    cursor: pointer;
 
 }
 .rodape-imagens img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-top: -90px;
     padding: 10px;
 }
@@ -346,8 +396,9 @@ header {
     justify-content: center;
     font-size: 25px;
     margin-top: -20px;
-    width: auto;
+    width: auto; 
 }
+
 #rodape-copyright{
     display: flex;
     align-items: center;
@@ -356,6 +407,15 @@ header {
     margin-right: 250px;
     margin-top: -30px;
 }
+#setas{
+    display: flex;
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-right: 6%;
+    margin-top: -40px;  
+}
+
 
 
 
@@ -364,7 +424,7 @@ header {
 
 /* Início do Media query */
 
-@media (max-width: 750px)
+@media only screen and (max-width: 650px)
   /* o padrão é tela desktop - aqui vai assumir quando as telas forem pequenas */
   {
    
@@ -373,19 +433,19 @@ header {
     .hamburger {
     margin-top: 6vh;
     display: block;
-    z-index: 1;
+    
       
     }
 
     #logo-cliente{
-        margin-left: 2vw;
+        margin-left: 5%;
         height: 100%;
     }
 
   
     .barra-pesquisa{
-        width: 1vw;
-        margin-left: 35vw;
+        
+        margin-left: 15%;
         
     
    }
@@ -400,7 +460,7 @@ header {
    }
 
    .borda-pesquisa{
-        width: 45vw;
+        width: 90%;
     
    }
 
@@ -472,12 +532,10 @@ header {
         
     /* Início da responsividade dos cards */ 
 
-    .cartao-visita-digital, .banner, .itens-utilitarios{
-        margin-left: 20%;
-    }
 
     .card{
         margin-left: 0%;
+        max-width: auto;
     }
 
 
@@ -550,15 +608,82 @@ header {
         width:100%;
     }
 
+
     .contato{
         width: 100%;
         margin-left: 0vw;
         height: auto;
     }
 
+    .formulario-botao{
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 50%;
+    }
+
+    .formulario-quadrado{
+        margin-left: 0%;
+    }
 
 
     /* Fim da responsividade da seção Contato */
+
+
+
+    /* Início da responsividade da seção Rodape */
+
+
+    .rodape{
+        
+        display: table;
+        
+    }
+
+    .rodape li{
+        
+        font-size: 4vw;
+        margin-left: 10%;
+    
+    }
+
+    .rodape li a:hover{
+        color:rgb(67, 64, 224);
+        font-size: 3.5vw;
+    }
+
+    .grupo2{
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    
+    
+    .rodape-imagens{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        
+    }
+
+    
+    
+
+    #rodape-agradecimento{
+        display: none;
+    }
+
+    #rodape-copyright{
+        display: flex;
+        align-items: center;
+        margin-right: 30%;
+        
+        
+    }
+
+
+    /* Fim da responsividade da seção Rodape */
 
 
 }

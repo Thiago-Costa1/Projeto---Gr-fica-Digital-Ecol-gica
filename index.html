@@ -15,7 +15,7 @@
     <header>
         <div class="nav">
             <img src="imagens/logo-cliente.png" alt="logo" id="logo-cliente">
-            <button class="hamburger"></button>
+            
             <nav class="nav-list">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -25,17 +25,34 @@
                     <li><a href="#" id="favoritos">Carrinho</a></li>
                 </ul>
             </nav>
+            <div class="barra-pesquisa"> 
+                <input class="borda-pesquisa" type="text" placeholder="Barra de pesquisa">
+                <img class="lupa-pesquisa" src="imagens/lupa.png" alt="lupa">
+                <img class="img-carrinho"  src="imagens/img-carrinho.png" alt="carrinho de compras" id="id-carrinho">
+            </div>
+            <button class="hamburger"></button>
         </div>
         
-        <div class="barra-pesquisa"> 
-            <input class="borda-pesquisa" type="text" placeholder="Barra de pesquisa">
-            <img class="lupa-pesquisa" src="imagens/lupa.png" alt="lupa">
-            <img class="img-carrinho"  src="imagens/img-carrinho.png" alt="carrinho de compras" id="id-carrinho">
-        </div>
+        
         
     </header>
 
     <!-- Fim do header (menu, cabeçalho) -->
+
+
+    <!-- Início do carrossel -->
+
+    <section id="carrossel">
+		<img id="img_sslide" name="slide" src="imagens/carrossel-cartao.png" />
+		<form id="botoes_slide">
+			<input type="radio" id="v1" name="m" onClick="Muda(1)"/>
+			<input type="radio" id="v2" name="m" onClick="Muda(2)"/>
+			<input type="radio" id="v3" name="m" onClick="Muda(3)"/>
+		</form>
+	</section>
+
+
+    <!-- Fim do carrossel -->
     
     <main>
         <!-- Início da 1º seção -->
@@ -250,17 +267,17 @@
             <form>
                 <h1 id="h1-descricao-formulario">Alguma dúvida, sugestão ou reclamação? Entre em contato conosco! Envie uma mensagem para nós!</h1>
             <div class="contato-dentro">
-                        <div class="col1">    
-                            <div class="formulario-nome">
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="nome" id="nome" required>
-                            </div>
+                <div class="col1">    
+                    <div class="formulario-nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
                     
-                            <div class="formulario-email">
-                                <label for="email">E-mail:</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-                        </div>
+                    <div class="formulario-email">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
             
 
                 <div class="col2">  
@@ -285,23 +302,30 @@
         <!-- Início da seção Rodapé -->
         
         <footer class="rodape">
-            <nav class="nav-topicos">
-                <ul>    
-                    <li><a href="#section-contato">Contato</a></li>
-                    <li><a href="#section-sobre">Sobre</a></li>
-                    <li><a href="#section-api">Visite-nos</a></li>    
-
-                </ul>
-            </nav>
-            <div class="rodape-imagens">
-                <img src="imagens/facebook.png" alt="icone do facebook">
-                <img src="imagens/instagram.png" alt="icone do instagram">
-                <img src="imagens/whatsapp.png" alt="icone do whatsapp">
-                <img src="imagens/linkedin.png" alt="icone do linkeding">
+            <div class="rodape-container">
+                <div class="grupo1">
+                    <nav class="nav-topicos">
+                        <ul>    
+                             <li><a href="#section-contato">Contato</a></li>
+                              <li><a href="#section-sobre">Sobre</a></li>
+                              <li><a href="#section-api">Visite-nos</a></li>    
+      
+                          </ul>
+                      </nav>
+                </div>
+                <div class="grupo2">    
+                    <div class="rodape-imagens">
+                        <img src="imagens/facebook.png" alt="facebook">
+                        <img src="imagens/instagram.png" alt="instagram">
+                        <img src="imagens/whatsapp.png" alt="whatsapp">
+                        <img src="imagens/linkedin.png" alt="linkeding">
+                    </div>
+                </div>
+                
             </div>
-            <h1 id="rodape-agradecimento">Obrigado pela preferência!</h1> 
-            <h1 id="rodape-copyright">EcoDesignGráfica<br/>todos os direitos reservados <span>&copy;</span></h1>
-            
+                <h1 id="rodape-agradecimento">Obrigado pela preferência!</h1> 
+                <h1 id="rodape-copyright">EcoDesignGráfica<br/>todos os direitos reservados <span>&copy;</span></h1>
+                <a href="#"><img src="imagens/setas-para-cima.png" alt="imagem de setas para cima" id="setas"></a>
         </footer>
 
         <!-- Fim da seção Rodapé -->
