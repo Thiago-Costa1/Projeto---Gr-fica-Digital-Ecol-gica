@@ -155,7 +155,7 @@ header {
     /* Início da estilização de todas as seções de produtos */
 
 .cartao-visita-digital{
-    margin-left: 153px;
+    margin-left: 17.5%;
     
 }
 
@@ -169,11 +169,12 @@ header {
     width: 200px;
 } 
 .banner, .itens-utilitarios{
-    margin-left: 153px;
+    margin-left: 17.5%;
     margin-top: 20px;
 }
 
 /* Estilizando os cards */
+
 .card{
     width:300px;
     height: 450px;
@@ -181,7 +182,7 @@ header {
     margin-top: 30px;
     padding: 10px;
     margin-left: 15px;
-    display: inline-block;;
+    display: inline-block;
     border-radius: 15px;
     box-sizing: border-box;
     text-align: center;
@@ -531,6 +532,8 @@ header {
 
     /* Fim da responsividade do header */
 
+
+
         
     /* Início da responsividade dos cards */ 
 
@@ -538,10 +541,31 @@ header {
     .card{
         margin-left: 0;
         max-width: auto;
+        width:90%;
+        height: 30%;
     }
 
 
     /* Fim da responsividade dos cards */
+
+
+
+    /* Início da responsividade da seção que contém os cards */
+
+   .cartao-visita-digital{
+        margin-left: 20%;
+        
+   } 
+
+
+   .card button{
+    margin-left: 14%;
+   }
+
+   /* Fim da responsividade da seção que contém os cards */
+
+
+
 
 
     /* Início da responsividade da seção Sobre */
