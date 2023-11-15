@@ -12,6 +12,7 @@ body{
     color: rgb(0,0,0);
     background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20), rgb(252, 247, 0), rgb(1, 253, 18));
 
+
 }
 
 
@@ -436,22 +437,18 @@ header {
     .hamburger {
     margin-top: 6vh;
     display: block;
+    margin-right: 1vw;
     
       
     }
 
     #logo-cliente{
-        margin-left: 5%;
+        margin-left: 3%;
         height: 100%;
     }
 
   
-    .barra-pesquisa{
-        
-        margin-left: 15%;
-        
-    
-   }
+   
 
    #favoritos{
        display: block;
@@ -464,7 +461,14 @@ header {
 
    .borda-pesquisa{
         width: 90%;
+        padding-left: 1%;
+        font-size: 2vh;
     
+   }
+
+
+   .barra-pesquisa{
+    margin-right: 2%;
    }
 
 
@@ -473,7 +477,7 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      height: 35vh;
+      height: 37vh;
       clip-path: circle(33px at 90% -15%);
       transition: 1s ease-out;
       background: linear-gradient(to bottom, rgba(131, 85, 204,0.9), rgba(175,85,220,0.9));
@@ -559,7 +563,8 @@ header {
 
 
    .card button{
-    margin-left: 14%;
+    margin-left: 30%;
+    width: 45%;
    }
 
    /* Fim da responsividade da seção que contém os cards */
@@ -607,7 +612,7 @@ header {
     #h1-visite-nos{
         font-size: 5vh;
         margin-top: 0vh;
-        margin-left: 40vw;
+        margin-left: 32vw;
     }
 
     #iframe-api{
@@ -645,6 +650,13 @@ header {
         margin-top: 1%;
         margin-bottom: 1%;
         margin-left: 50%;
+        
+        
+    }
+
+    .formulario-botao button{
+        font-size: 6vw;
+        width: 39%;
     }
 
     .formulario-quadrado{
@@ -683,16 +695,6 @@ header {
         justify-content: center;
         
     }
-
-    
-    
-    .rodape-imagens{
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        
-    }
-
     
     
 
@@ -703,7 +705,9 @@ header {
     #rodape-copyright{
         display: flex;
         align-items: center;
-        margin-right: 30%;
+        margin-right: 25%;
+        font-size: 2vh;
+        margin-top: 4%;
         
         
     }

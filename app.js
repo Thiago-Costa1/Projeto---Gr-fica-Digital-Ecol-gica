@@ -4,7 +4,7 @@ const nav = document.querySelector(".nav");
 hamburger.addEventListener("click", () => nav.classList.toggle("active"));
 
 var contador = 1; //variável pública criada fora da function
-		var img1="imagens/carrossel-cartao.png";
+		var img1="imagens/carrossel1.png";
 		var img2="imagens/carrossel2.png";
 		var img3="imagens/carrossel3.png";
 		var tempo=4000; //1500(milessegundos) : 1000 (milessegundo) = 1,5s
