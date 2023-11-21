@@ -10,7 +10,7 @@ html{
 }
 body{
     color: rgb(0,0,0);
-    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20), rgb(252, 247, 0), rgb(1, 253, 18));
+    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20), rgb(252, 247, 0), rgb(17, 199, 199));
 
 
 }
@@ -423,7 +423,7 @@ header {
     background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246));
 }
 .rodape li{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-left: 165px;
     margin-top: 10px;
     width: 100px;
@@ -439,7 +439,7 @@ header {
     color: rgb(0, 0, 0);
 }
 .nav-topicos{
-    padding-top: 30px;
+    padding-top: 35px;
     width: 5%;
     margin-top: -8%;
 }
