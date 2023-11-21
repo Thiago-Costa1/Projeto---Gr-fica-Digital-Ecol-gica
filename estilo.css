@@ -36,6 +36,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     
 
   }
@@ -129,27 +130,80 @@ header {
 
   /* Início do carrossel */
 
-  #img_sslide
-		{
-			height:70%; 
-			width:100%;
-			border-radius:20px;
-			box-shadow:2px 4px 12px 3px rgb(100,100,100);
-		}
-	  
-		#carrossel
-		{
-			height:350px; /*altura fixa */
-			width:100%;
-		}
-	  
-		#botoes_slide
-		{
-			margin-left:50%;
-			margin-top: 1%;
-		}
+  section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+    z-index: 1;
+  }
 
-    /* Fim do carrossel */
+
+    .slider-content input, .img-mobile{
+        display: none;
+    }
+
+    .slide-box{
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        transition: 1s;
+    }
+
+    .slide-box img{
+        width: 100%;
+    }
+
+    .slider-content{
+        width: 400%;
+        height: auto;
+        display: flex;
+    }
+
+    .nav-manual, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 24%; /* mudar aqui se as bolinhas estiverem em cima das imagens ou muito distante delas */
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{
+        border: 1px solid rgb(30, 253, 0);
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){  /* para que todos os elementos tenham o mesmo estilo, menos a última bolinha */ 
+        margin-right: 10px;
+    }                
+
+    .nav-manual .manual-btn:hover{
+        background-color: rgb(30, 253, 0);
+    }
+
+    #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {     /* quando estiver marcado */   
+        background-color: rgb(30, 253, 0);
+    }     
+    
+    #radio1:checked ~ .primeiro{
+        margin-left: 0%;
+    }
+
+    #radio2:checked ~ .primeiro{
+        margin-left: -25%;
+    }
+
+    #radio3:checked ~ .primeiro{
+        margin-left: -50%;  
+    }
+
+
+    /* Fim do carrossel */ 
 
   
 
@@ -157,6 +211,7 @@ header {
 
 .cartao-visita-digital{
     margin-left: 10%;
+    margin-top: 3%;
     
 }
 
@@ -178,7 +233,7 @@ header {
 
 .card{
     width: 20%;
-    height: 75vh;             /* height: 450px; */
+    height: 68vh;             /* height: 450px; */
     border:1px solid #ccc;
     margin-top: 30px;
     padding: 10px;
@@ -293,29 +348,22 @@ header {
 
 .contato-dentro
   {
-      /* professora deixou esse comando: display:table; */
       display: flex;
-      
-      
-      
+         
   }
 
   [class*='col']
   {
       width:50%;
-      
-      
+         
   }
-
-  
-
 
 #h1-descricao-formulario{
     font-size: 28px;
     padding-top: 30px;
     margin-left: 40px;
 }
-.formulario-nome{
+.formulario-nome, .formulario-email{
     font-size: 25px;
     margin-top: 10%;
     margin-left: 10%;
@@ -375,7 +423,7 @@ header {
     background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246));
 }
 .rodape li{
-    font-size: 22px;
+    font-size: 1.5vw;
     margin-left: 165px;
     margin-top: 10px;
     width: 100px;
@@ -395,6 +443,14 @@ header {
     width: 5%;
     margin-top: -8%;
 }
+
+.nav-topicos ul{
+    margin-top: -17%;
+    list-style: url(imagens/folha.png);
+}
+
+
+
 .rodape-imagens{
     display: flex;
     justify-content: center;
@@ -405,7 +461,7 @@ header {
     height: 60px;
     padding: 10px;
     cursor: pointer;
-    margin-top: 54px;
+    margin-top: 41px;
 }
 #rodape-agradecimento{
     display: flex;
@@ -432,34 +488,28 @@ header {
     margin-top: -40px;  
 }
 
-
-
-
 /* Fim do rodapé */
+
 
 
 /* Início do Media query */
 
 @media only screen and (max-width: 650px)
-  /* o padrão é tela desktop - aqui vai assumir quando as telas forem pequenas */
   {
    
     /* Início da responsividade do header */
 
-    .hamburger {
+    .hamburger { /* botão de fechar */
     margin-top: 6vh;
     display: block;
     margin-right: 1vw;
-    
-      
+    z-index: 3;
     }
 
     #logo-cliente{
         margin-left: 3%;
         height: 100%;
     }
-
-  
    
 
    #favoritos{
@@ -496,6 +546,7 @@ header {
       justify-content: space-around;
       gap: 10;
       pointer-events: none;
+      z-index: 2;
     }
 
     .nav-list a{
@@ -539,7 +590,7 @@ header {
       font-size: 4vh;
     }
   
-    .nav.active .hamburger {
+    .nav.active .hamburger { 
       position: fixed;
       top: 26px;
       right: 16px;
@@ -558,8 +609,24 @@ header {
     /* Fim da responsividade do header */
 
 
+    /* Início da responsividade do carrossel */
 
-        
+    .img-desktop{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 68%;
+    }
+
+    /* Fim da responsividade do carrossel */
+
+
+    
     /* Início da responsividade dos cards */ 
 
 
@@ -579,7 +646,7 @@ header {
 
    .cartao-visita-digital, .banner, .itens-utilitarios{
         margin-left: 11%;
-
+        margin-top: 16%;
    } 
 
 
@@ -698,6 +765,10 @@ header {
         height: 1%;
     }
 
+    .nav-topicos ul{
+        margin-top: -5%;
+    }
+
     .rodape li{
         
         font-size: 6vw;
@@ -717,6 +788,7 @@ header {
 
     .nav-topicos{
         width: 100%;
+        margin-top: -4%;
     }
 
   

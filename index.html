@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Design Gráfica</title>
     <link rel="stylesheet" href="estilo.css" type="text/css">
-    <script defer src="app.js"></script><!--"defer" faz o script carregar depois do html-->
+    <script src="app.js" defer></script><!--"defer" faz o script carregar depois do html-->
 </head>
 
 <body>
@@ -39,22 +39,51 @@
 
     <!-- Fim do header (menu, cabeçalho) -->
 
+<main>
 
     <!-- Início do carrossel -->
 
-    <section id="carrossel">
-		<img id="img_sslide" name="slide" src="imagens/carrossel1.png" />
-		<form id="botoes_slide">
-			<input type="radio" id="v1" name="m" onClick="Muda(1)"/>
-			<input type="radio" id="v2" name="m" onClick="Muda(2)"/>
-			<input type="radio" id="v3" name="m" onClick="Muda(3)"/>
-		</form>
-	</section>
+    <section class="slider">
+        <div class="slider-content">
 
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
 
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="imagens/slide-1.png" alt="slide 1">
+                <img class="img-mobile" src="imagens/slide-1-mob.png" alt="slide 1">
+            </div>          
+            
+            <div class="slide-box">
+                <img class="img-desktop" src="imagens/slide-2.png" alt="slide 2">
+                <img class="img-mobile" src="imagens/slide-2-mob.png" alt="slide 2">
+            </div>    
+
+            <div class="slide-box">
+                <img class="img-desktop" src="imagens/slide-3.png" alt="slide 3">
+                <img class="img-mobile" src="imagens/slide-3-mob.png" alt="slide 3">
+            </div>    
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+
+    </section>
+   
     <!-- Fim do carrossel -->
     
-    <main>
+    
         <!-- Início da 1º seção -->
 
         <section class="cartao-visita-digital" id="section-cartao">
@@ -301,7 +330,6 @@
         
         <footer class="rodape">
             
-
             <div class="rodape-imagens">
                 <img src="imagens/facebook.png" alt="facebook">
                 <img src="imagens/instagram.png" alt="instagram">
@@ -309,21 +337,15 @@
                 <img src="imagens/linkedin.png" alt="linkeding">
             </div>
 
-
-
                 <nav class="nav-topicos">
                     <ul>    
-                        <li><a href="#section-contato">Contato</a></li>
+                        <li><a href="#section-cartao">Produtos</a></li>
                         <li><a href="#section-sobre">Sobre</a></li>
-                        <li><a href="#section-api">Visite-nos</a></li>    
-      
+                        <li><a href="#section-api">Visite-nos</a></li>
+                        <li><a href="#section-contato">Contato</a></li>
                     </ul>
                 </nav>
             
-                    
-                
-                
-
             <h1 id="rodape-agradecimento">Obrigado pela preferência!</h1> 
             <h1 id="rodape-copyright">EcoDesignGráfica<br/>todos os direitos reservados <span>&copy;</span></h1>
             <a href="#"><img src="imagens/setas-para-cima.png" alt="imagem de setas para cima" id="setas"></a>
