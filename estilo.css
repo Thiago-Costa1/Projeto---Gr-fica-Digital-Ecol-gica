@@ -10,11 +10,14 @@ html{
 }
 body{
     color: rgb(0,0,0);
-    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20), rgb(252, 247, 0), rgb(17, 199, 199));
+    background: linear-gradient(to bottom,rgb(199, 32, 32));
 
 
 }
 
+main{
+    
+}
 
 /* Início do header (cabeçalho, menu) */
  
@@ -24,7 +27,7 @@ a {
   }
   
 header {
-    background-color: rgb(14, 6, 59);
+    background-color: rgb(25, 8, 121);
     background-image: linear-gradient(to right, rgb(14, 6, 59), rgb(197, 59, 167) );
     height: 120px;
     width: 100%;
@@ -215,15 +218,6 @@ header {
     
 }
 
-.imagens {
-    margin-top: 5px;
-    height: 270px;
-    width: 70%;
-    margin-left: -2px;
-}
-#img-estabelecimento{
-    width: 200px;
-} 
 .banner, .itens-utilitarios{
     margin-left: 10%;
     margin-top: 20px;
@@ -233,7 +227,7 @@ header {
 
 .card{
     width: 20%;
-    height: 68vh;             /* height: 450px; */
+    height:550pxpx;             /* height: 450px; */
     border:1px solid #ccc;
     margin-top: 30px;
     padding: 10px;
@@ -243,23 +237,23 @@ header {
     box-sizing: border-box;
     text-align: center;
 }
+
 .card img{
-    width: 56%;
-    height: 190px;
+    margin-top: 5px;
+    height: 270px;
+    width:30%;
 }
-.card img:hover{
-    border:10px double black;
-    
-}
+
 .card h3{
-    font-size: 18px;
+    font-size: 1.5vw;
     margin-top: 10px;
 }
 .card h3:hover{
     color:yellow;
 }
 .card p{
-    font-size: 2.3vh;
+    font-family:Tahoma;
+    font-size: 0.9vw;
     margin-top: 10px;
 }
 .card button{
@@ -290,13 +284,28 @@ header {
 
 /* Início da estilização da seção Sobre */
 
-.sobre, .api, .contato{
+.sobre{
+    display: flex;
+    height: 200px;
+    width: 77.5%;  
+    margin-top: 80px;
+    margin-left: 145px; 
+    background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
+    border-radius: 10px;
+
+
+}
+
+
+
+
+.api, .contato{
     display: flex;
     height: 300px;
     width: 77.5%;  
     margin-top: 80px;
     margin-left: 145px; 
-    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246), rgb(253, 0, 20));
+    background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
 
     border-radius: 10px;
 }
@@ -318,33 +327,11 @@ header {
 /* Fim da estilização da seção Sobre */
 
 
-/* Início da seção Visite-nos */
-
-.api-posicionamento{
-    height: 260px;
-    margin-top: 20px;
-    margin-left: 115px
-}
-
-.posicionamento-visite{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-} 
-
-.posicionamento-visite h1{
-    font-size:2.8vw;
-    margin-top: 130px;
-    
-}
-
-/* Fim da seção Visite-nos */
-
-
 /* Início da seção Contato */
 
+#form {
+    width: 100%;
+}
 
 .contato-dentro
   {
@@ -362,6 +349,8 @@ header {
     font-size: 28px;
     padding-top: 30px;
     margin-left: 40px;
+    display: flex;
+    justify-content: center;
 }
 .formulario-nome, .formulario-email{
     font-size: 25px;
@@ -414,13 +403,43 @@ header {
 /* Fim da seção Contato */
 
 
+
+
+/* Início da seção Visite-nos */
+
+.api-posicionamento{
+    height: 260px;
+    margin-top: 20px;
+    margin-left: 115px
+}
+
+.posicionamento-visite{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+} 
+
+.posicionamento-visite h1{
+    font-size:2.8vw;
+    margin-top: 130px;
+    
+}
+
+/* Fim da seção Visite-nos */
+
+
+
+
+
 /* Inicío do rodapé */
 
 .rodape{
     margin-top: 80px;
     width: 100%;
     height: 170px;
-    background: linear-gradient(to bottom, rgb(0, 216, 253), rgb(253, 1, 246));
+    background-image: linear-gradient(to left, rgb(14, 6, 59), rgb(197, 59, 167) );
 }
 .rodape li{
     font-size: 1.2vw;
@@ -436,7 +455,7 @@ header {
 
 .rodape a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255,255,255)
 }
 .nav-topicos{
     padding-top: 35px;
@@ -447,6 +466,7 @@ header {
 .nav-topicos ul{
     margin-top: -17%;
     list-style: url(imagens/folha.png);
+    
 }
 
 
@@ -464,6 +484,7 @@ header {
     margin-top: 41px;
 }
 #rodape-agradecimento{
+    color: white;
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -472,6 +493,7 @@ header {
 }
 
 #rodape-copyright{
+    color: white;
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -486,6 +508,7 @@ header {
     width: 30px;
     margin-right: 6%;
     margin-top: -40px;  
+    color: white;
 }
 
 /* Fim do rodapé */
@@ -649,6 +672,13 @@ header {
         margin-top: 16%;
    } 
 
+   .card p{
+       font-size:2.8vw;
+   }
+
+   .card h3{
+       font-size:4vw;
+   }
 
    .card button{
     margin-left: 30%;
