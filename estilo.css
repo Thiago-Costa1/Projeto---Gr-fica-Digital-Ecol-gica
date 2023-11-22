@@ -15,10 +15,6 @@ body{
 
 }
 
-main{
-    
-}
-
 /* Início do header (cabeçalho, menu) */
  
 a {
@@ -513,6 +509,35 @@ header {
 
 /* Fim do rodapé */
 
+
+ /* Início do Media Query versão notebook */
+ 
+
+@media only screen and (min-width: 651px) and (max-width:1366px){
+
+    
+
+    .card img{
+        margin-top: 5px;
+        height: 270px;
+        width:70%;
+    }
+
+    .card img:hover{
+        border:10px double black;
+        
+    }
+
+    #img-estabelecimento{
+        width: 70%;
+    }
+
+
+}
+
+
+
+/* Fim do Media Query */
 
 
 /* Início do Media query */
