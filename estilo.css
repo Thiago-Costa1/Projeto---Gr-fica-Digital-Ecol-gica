@@ -23,7 +23,6 @@ a {
   }
   
 header {
-    background-color: rgb(25, 8, 121);
     background-image: linear-gradient(to right, rgb(14, 6, 59), rgb(197, 59, 167) );
     height: 120px;
     width: 100%;
@@ -62,7 +61,7 @@ header {
     
   }
   #favoritos{
-      display: none;
+    display: none;
   }
   
   .nav-list a {
@@ -223,8 +222,8 @@ header {
 
 .card{
     width: 20%;
-    height:550pxpx;             /* height: 450px; */
-    border:1px solid #ccc;
+    /* height: 450px; */
+    border:1px solid #a1a0a0;
     margin-top: 30px;
     padding: 10px;
     margin-left: 15px;
@@ -238,6 +237,10 @@ header {
     margin-top: 5px;
     height: 270px;
     width:30%;
+}
+
+.card img:hover{
+    border:10px double black;
 }
 
 .card h3{
@@ -285,7 +288,7 @@ header {
     height: 200px;
     width: 77.5%;  
     margin-top: 80px;
-    margin-left: 145px; 
+    margin-left: 10.8%; 
     background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
     border-radius: 10px;
 
@@ -300,7 +303,7 @@ header {
     height: 300px;
     width: 77.5%;  
     margin-top: 80px;
-    margin-left: 145px; 
+    margin-left: 10.8%;  
     background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
 
     border-radius: 10px;
@@ -406,7 +409,9 @@ header {
 .api-posicionamento{
     height: 260px;
     margin-top: 20px;
-    margin-left: 115px
+    margin-left: 5%;
+    width: 150%;
+    
 }
 
 .posicionamento-visite{
@@ -495,7 +500,7 @@ header {
     font-size: 15px;
     justify-content: right;
     margin-right: 14%;
-    margin-top: -30px;
+    margin-top: -3%;
 }
 #setas{
     display: flex;
@@ -516,6 +521,8 @@ header {
 @media only screen and (min-width: 651px) and (max-width:1366px){
 
     
+    /* Início da responsividade do card na versão notebook */
+
 
     .card img{
         margin-top: 5px;
@@ -523,24 +530,22 @@ header {
         width:70%;
     }
 
-    .card img:hover{
-        border:10px double black;
-        
-    }
 
     #img-estabelecimento{
         width: 70%;
-    }
+    }    
 
+
+    /* Fim da responsividade do card na versão notebook */
 
 }
 
 
 
-/* Fim do Media Query */
+/* Fim do Media Query na versão notebook */
 
 
-/* Início do Media query */
+/* Início do Media query mobile */
 
 @media only screen and (max-width: 650px)
   {
@@ -567,6 +572,7 @@ header {
    #id-carrinho{
        display: none;
        
+
    }
 
    .borda-pesquisa{
@@ -588,7 +594,7 @@ header {
       left: 0;
       width: 100%;
       height: 30vh;
-      clip-path: circle(31px at 90% -15%);
+      clip-path: circle(29px at 90% -15%);
       transition: 1s ease-out;
       background: linear-gradient(to bottom, rgba(131, 85, 204,0.9), rgba(175,85,220,0.9));
       justify-content: space-around;
@@ -682,8 +688,13 @@ header {
         margin-left: 0;
         max-width: auto;
         width:90%;
-        height: 30%;
+        
     }
+
+    .card img{
+        width: 100%;
+    }
+
 
 
     /* Fim da responsividade dos cards */
@@ -698,11 +709,11 @@ header {
    } 
 
    .card p{
-       font-size:2.8vw;
+       font-size:2.5vh;
    }
 
    .card h3{
-       font-size:4vw;
+       font-size:3.5vh;
    }
 
    .card button{
@@ -873,4 +884,4 @@ header {
 
 }
 
-/* Fim do Media query */
+/* Fim do Media Query mobile */
