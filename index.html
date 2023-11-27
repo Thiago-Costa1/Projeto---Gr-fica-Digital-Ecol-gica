@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+        <!-- Configuração do conjunto de caracteres -->
     <meta charset="UTF-8">
+        <!-- Configuração da viewport para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título da página -->
     <title>Eco Design Gráfica</title>
+        <!-- Link para a folha de estilo externa -->
     <link rel="stylesheet" href="estilo.css" type="text/css">
     <script src="app.js" defer></script><!--"defer" faz o script carregar depois do html-->
 </head>
@@ -13,24 +17,38 @@
     <!-- Início do header (menu, cabeçalho) -->
 
     <header>
+            <!-- Barra de navegação -->
         <div class="nav">
+                    <!-- Logo do cliente -->
             <img src="imagens/logo.png" alt="logo" id="logo-cliente">
+                    <!-- Navegação principal -->
             <nav class="nav-list">
                 <ul>
+                                <!-- Link para a página inicial (Home) -->
                     <li><a href="#" id="home">Home</a></li>
+                                <!-- Link para a seção Sobre -->
                     <li><a href="#section-sobre">Sobre</a></li>
+                                <!-- Link para a seção Produtos -->
                     <li><a href="#section-cartao">Produtos</a></li>
+                                <!-- Link para a seção Contato -->
                     <li><a href="#section-contato">Contato</a></li>
+                                <!-- Link para a página de Carrinho (Favoritos) -->
                     <li><a href="#" id="favoritos">Carrinho</a></li>
                 </ul>
             </nav>
+                    <!-- Barra de pesquisa -->
             <div class="barra-pesquisa"> 
+                    <!-- Campo de pesquisa -->
                 <input class="borda-pesquisa" type="text" placeholder="Pesquise...">
+                    <!-- Ícone de lupa para pesquisa -->
                 <img class="lupa-pesquisa" src="imagens/lupa.png" alt="lupa">
+                    <!-- Ícone do carrinho de compras -->
                 <img class="img-carrinho"  src="imagens/img-carrinho.png" alt="carrinho de compras" id="id-carrinho">
             </div>
+            <!-- Botão hamburger para menu responsivo -->
             <button class="hamburger"></button>
         </div>
+            <!-- Fim da barra de navegação -->
     </header>
 
     <!-- Fim do header (menu, cabeçalho) -->
@@ -55,7 +73,7 @@
 
 
             <!--Cada div com a classe slide-box representa um slide no carrossel. Cada slide contém duas imagens,
-            uma para visualização em desktop e outra para visualização em dispositivos móveis. -->
+            uma para visualização em desktop e outra para visualização em dispositivos mobile. -->
 
             <div class="slide-box primeiro">
                 <img class="img-desktop" src="imagens/slide-3.png"   alt="slide 1">
@@ -83,7 +101,7 @@
 
             <!--Estes são botões de navegação manual. Cada label é associada a um botão de rádio correspondente.
             Quando a label é clicada, o botão de rádio correspondente é selecionado, levando a uma mudança de slide
-            no carrossel.-->
+            no carrossel, de forma manual.-->
 
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
@@ -292,7 +310,7 @@
 
         <!-- Início da seção Sobre -->
 
-        <!--Uma seção com a classe "sobre" e com o id "section-sobre", possue um título, que é feito através do h1 e uma
+        <!-- Uma seção com a classe "sobre" e com o id "section-sobre", possui um título, que é feito através do h1 e uma
         descrição feita através do h2.-->
 
         <section class="sobre" id="section-sobre">    
@@ -306,35 +324,43 @@
 
          <!-- Início da seção Contato -->
 
-         <section class="contato" id="section-contato">
-            <form id="form">
-                
-                <h1 id="h1-descricao-formulario">Alguma dúvida, sugestão ou reclamação? Entre em contato conosco! </h1>
-            <div class="contato-dentro">
-                <div class="col1">    
-                    <div class="formulario-nome">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" required>
-                    </div>
-                    
-                    <div class="formulario-email">
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                </div>
-            
 
-                <div class="col2">  
-                    <div class="formulario-quadrado">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+        <section class="contato" id="section-contato">
+
+            <!-- Início do formulário de contato -->
+            <form id="form">
+                <!-- Título do formulário -->
+                <h1 id="h1-descricao-formulario">Alguma dúvida, sugestão ou reclamação? Entre em contato conosco! </h1>
+                <!-- Estrutura interna do formulário -->
+                <div class="contato-dentro">
+                    <!-- Coluna 1 do formulário -->
+                    <div class="col1">    
+                        <!-- Campo para inserir o nome -->
+                        <div class="formulario-nome">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <!-- Campo para inserir o e-mail -->
+                        <div class="formulario-email">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
                     </div>
-                    <div class="formulario-botao">
-                        <button type="submit">Enviar</button>
+            
+                    <!-- Coluna 2 do formulário -->
+                    <div class="col2">  
+                        <!-- Caixa de texto para a mensagem -->
+                        <div class="formulario-quadrado">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <!-- Botão de envio do formulário -->
+                        <div class="formulario-botao">
+                            <button type="submit">Enviar</button>
+                        </div>
                     </div>
-                </div>
                
-            </div>
+                </div>
                 
             </form>
         </section>
@@ -348,8 +374,11 @@
         <!-- Início da seção Api (visite-nos) -->
 
         <section class="api" id="section-api">
+                <!-- Início da seção do mapa API -->
                 <iframe class="api-posicionamento" id="iframe-api" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.324773027795!2d-46.73036142467097!3d-23.520818578827694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1698002439400!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="posicionamento-visite">
+                <!-- Contêiner para o texto de posicionamento -->
+                <div class="posicionamento-visite">
+                <!-- Título da seção -->
                 <h1 id="h1-visite-nos">Visite-nos</h1>
             </div>
             
@@ -358,40 +387,43 @@
     </main>
 
         <!-- Fim da seção Visite-nos -->
-    
-
-       
-
-    
-
+           
         <!-- Início da seção Rodapé -->
         
         <footer class="rodape">
-            
+                <!-- Seção de links sociais -->
             <div class="rodape-imagens">
+                        <!-- Link para a página do Facebook -->
                 <a href="https://www.facebook.com/profile.php?id=61552307044304&mibextid=ZbWKwL" target="_blank">
                     <img src="imagens/facebook.png" alt="facebook">
                 </a>
-                
+                        <!-- Link para a página do Instagram -->
                 <a href="https://instagram.com/eco_designgrafica?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
                     <img src="imagens/instagram.png" alt="instagram">
                 </a>
-                
+                        <!-- Imagem do ícone do WhatsApp -->
                 <img src="imagens/whatsapp.png" alt="whatsapp">
+                        <!-- Imagem do ícone do LinkedIn -->
                 <img src="imagens/linkedin.png" alt="linkeding">
             </div>
-
+                <!-- Navegação dos tópicos do rodapé -->
                 <nav class="nav-topicos">
                     <ul>    
+                            <!-- Link para a seção de Produtos -->
                         <li><a href="#section-cartao">Produtos</a></li>
-                        <li><a href="#section-sobre">Sobre</a></li>
+                            <!-- Link para a seção Sobre -->
+                        <li><a href="#section-sobre">Sobre</a></li>                                   
+                            <!-- Link para a seção Visite-nos -->
                         <li><a href="#section-api">Visite-nos</a></li>
+                            <!-- Link para a seção Contato -->
                         <li><a href="#section-contato">Contato</a></li>
                     </ul>
                 </nav>
-            
-            <h1 id="rodape-agradecimento">Obrigado pela preferência!</h1> 
+                <!-- Agradecimento no rodapé -->
+            <h1 id="rodape-agradecimento">Obrigado pela preferência!</h1>
+                <!-- Copyright no rodapé --> 
             <h1 id="rodape-copyright">EcoDesignGráfica<br/>todos os direitos reservados <span>&copy;</span></h1>
+                <!-- Link para subir ao topo da página -->
             <a href="#"><img src="imagens/img-subir.png" alt="seta pra cima" id="setas"></a>
         </footer>
 
