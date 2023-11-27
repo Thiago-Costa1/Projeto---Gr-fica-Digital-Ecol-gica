@@ -15,7 +15,6 @@
     <header>
         <div class="nav">
             <img src="imagens/logo.png" alt="logo" id="logo-cliente">
-            
             <nav class="nav-list">
                 <ul>
                     <li><a href="#" id="home">Home</a></li>
@@ -32,9 +31,6 @@
             </div>
             <button class="hamburger"></button>
         </div>
-        
-        
-        
     </header>
 
     <!-- Fim do header (menu, cabeçalho) -->
@@ -43,12 +39,23 @@
 
     <!-- Início do carrossel -->
 
+
+    
     <section class="slider">
         <div class="slider-content">
+
+            <!-- Estes são os botões de rádio usados para a navegação do carrossel.
+        Cada um deles representa um slide no carrossel. 
+        Eles têm o mesmo nome (btn-radio), significa que pertencem a um grupo onde apenas um deles pode estar
+        selecionado ao mesmo tempo. Os IDs são usados para associar as labels e os slides.-->
 
             <input type="radio" name="btn-radio" id="radio1">
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
+
+
+            <!--Cada div com a classe slide-box representa um slide no carrossel. Cada slide contém duas imagens,
+            uma para visualização em desktop e outra para visualização em dispositivos móveis. -->
 
             <div class="slide-box primeiro">
                 <img class="img-desktop" src="imagens/slide-3.png"   alt="slide 1">
@@ -65,11 +72,18 @@
                 <img class="img-mobile" src="imagens/slide-1-mob.png" alt="slide 3">
             </div>    
 
+            <!--Estes são botões de navegação automática associados aos slides. Cada botão corresponde a um slide 
+            específico.-->
+
             <div class="nav-auto">
                 <div class="auto-btn1"></div>
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
             </div>
+
+            <!--Estes são botões de navegação manual. Cada label é associada a um botão de rádio correspondente.
+            Quando a label é clicada, o botão de rádio correspondente é selecionado, levando a uma mudança de slide
+            no carrossel.-->
 
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn"></label>
@@ -86,8 +100,15 @@
     
         <!-- Início da 1º seção -->
 
+        <!--Define uma seção com a classe cartao-visita-digital e o ID section-cartao. 
+        Esta seção contém informações sobre qual tipo de cartão será apresentada, nesse caso os cards são sobre "Cartão de
+        Visita Digital", através do h1 isso é feito.-->
+
         <section class="cartao-visita-digital" id="section-cartao">
             <h1 id="h1-titulo-cartao">Cartão de Visita Digital</h1>
+
+            <!--Cada cartão possui a mesma div (card) e nela contém: Uma imagem, um título, um parágrafo e um botão 
+            e isso se repete para todos-->
 
             <div class="card">
                 <img class="imagens" src="imagens/cartao-pessoal.png" alt="pessoal">
@@ -270,6 +291,9 @@
 
 
         <!-- Início da seção Sobre -->
+
+        <!--Uma seção com a classe "sobre" e com o id "section-sobre", possue um título, que é feito através do h1 e uma
+        descrição feita através do h2.-->
 
         <section class="sobre" id="section-sobre">    
             <h1 id="h1-titulo">Sobre</h1>
