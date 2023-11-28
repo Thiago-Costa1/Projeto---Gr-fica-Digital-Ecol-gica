@@ -1,3 +1,4 @@
+/* Resetando as margens, preenchimentos e configurando a caixa de modelo para todos os elementos */
 *{
     margin: 0;
     padding: 0;
@@ -8,274 +9,307 @@ html{
     scroll-snap-type: mandatory; /* define a direção da rolagem */
     scroll-snap-stop: always; /* força a rolagem a parar em cada seção */
 }
+/* Estilo geral para o corpo da página */
 body{
     color: rgb(0,0,0);
-    background: linear-gradient(to bottom,rgb(199, 32, 32));
-    font-family: Arial;
+    background: linear-gradient(to bottom,rgb(199, 32, 32)); /* Gradiente de fundo para o corpo da página */
+    font-family: Arial; /* Estilo da fonte para o corpo da página */
 
 }
 
 /* Início do header (cabeçalho, menu) */
  
+/* Estilo padrão para links */
 a {
     font-family: sans-serif;
     text-decoration: none;
-  }
+}
   
+/* Estilo para o cabeçalho da página */
 header {
-    background-image: linear-gradient(to right, rgb(14, 6, 59), rgb(197, 59, 167) );
-    height: 120px;
-    width: 100%;
-    
-  }
-  
+    background-image: linear-gradient(to right, rgb(14, 6, 59), rgb(197, 59, 167) ); /* Gradiente de fundo para o cabeçalho */
+    height: 120px; /* Altura do cabeçalho */
+    width: 100%; /* Largura total do cabeçalho */
+   
+}
+
+/* Estilo para a navegação no cabeçalho */ 
   .nav {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    width: 100%; /* Largura total da navegação */
+    height: 70px; /* Altura da navegação */
+    display: flex; /* Exibir os itens da navegação em linha */
+    align-items: center; /* Alinhar itens no centro */
+    justify-content: space-around; /* Distribuir espaço uniformemente entre os itens */
     
 
-  }
-
+}
+/* Estilo para a barra de pesquisa no cabeçalho */
   .barra-pesquisa{
-    margin-left: 3%;
-  }
-  
+    margin-left: 3%; /* Margem à esquerda da barra de pesquisa */
+}
+/* Estilo para o logotipo do cliente no cabeçalho */
     #logo-cliente{   
-    height: 200%;
-    width: 15%;
-    margin-top: 48px;
-    margin-left: 10%;
+    height: 200%; /* Altura do logotipo do cliente */
+    width: 15%; /* Largura do logotipo do cliente */
+    margin-top: 48px; /* Margem superior do logotipo do cliente */
+    margin-left: 10%; /* Margem à esquerda do logotipo do cliente */
 }
 
-
+/* Estilo para a lista de navegação no cabeçalho */
   .nav-list ul{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    margin-top: 45px;
-    margin-left: 5.5%;
+    display: flex; /* Exibir os itens da lista em linha */
+    gap: 40px; /* Espaçamento entre os itens da lista */
+    list-style: none; /* Remover os marcadores de lista */
+    margin-top: 45px; /* Margem superior da lista de navegação */
+    margin-left: 5.5%; /* Margem à esquerda da lista de navegação */
     
-
-    
-  }
+}
+/* Estilo para o logo do "Carrinho" que é inicialmente oculto */
   #favoritos{
-    display: none;
-  }
-  
-  .nav-list a {
-    font-size: 2.6vw;
-    color: #fff;
-    
-  }
- 
-  .nav-list li a:hover{
-    color:rgb(0, 255, 21);
-    font-size: 30px;
+    display: none; 
 }
   
+/* Estilo para os links na lista de navegação */
+  .nav-list a {
+    font-size: 2.6vw; /* Tamanho da fonte dos links na navegação */
+    color: #fff; /* Cor do texto dos links */
+    
+}
+ 
+/* Estilo para os links na lista de navegação ao passar o mouse sobre eles */
+  .nav-list li a:hover{
+    color:rgb(0, 255, 21); /* Mudar a cor do texto ao passar o mouse */
+    font-size: 30px;  /* Mudar o tamanho da fonte ao passar o mouse */
+}
+  
+/* Estilo para a barra de pesquisa no cabeçalho */
 .barra-pesquisa{
-    display: flex;
-    height: 25px;
-    margin-top: 43px;
-    margin-right: 8%;
+    display: flex; /* Exibir a barra de pesquisa como um contêiner flexível */
+    height: 25px; /* Altura da barra de pesquisa */
+    margin-top: 43px; /* Margem superior da barra de pesquisa */
+    margin-right: 8%; /* Margem à direita da barra de pesquisa */
 
 }
+/* Estilo para o ícone de lupa na barra de pesquisa */
 .lupa-pesquisa{
-    margin-top: 2px;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
+    margin-top: 2px; /* Margem superior do ícone de lupa */
+    width: 20px; /* Largura do ícone de lupa */
+    height: 20px; /* Altura do ícone de lupa */
+    margin-right: 10px; /* Margem à direita do ícone de lupa */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
     
 }
+/* Estilo para o campo de pesquisa na barra de pesquisa */
 .borda-pesquisa{
-    border-radius: 25px;
-    padding-left: 25px;
-    width: 100%;  
+    border-radius: 25px; /* Raio da borda do campo de pesquisa */
+    padding-left: 25px; /* Espaçamento interno à esquerda do campo de pesquisa */
+    width: 100%;  /* Largura total do campo de pesquisa */
 }
+
+/* Estilo para o ícone do carrinho de compras */
 .img-carrinho{
-    height: 35px;
-    width: 35px;
-    margin-left: 2%;
-    margin-top: -3px;
-    cursor: pointer;
+    height: 35px; /* Altura do ícone do carrinho de compras */
+    width: 35px; /* Largura do ícone do carrinho de compras */
+    margin-left: 2%; /* Margem à esquerda do ícone do carrinho de compras */
+    margin-top: -3px; /* Margem superior do ícone do carrinho de compras */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
 } 
 
+/* Estilo para o botão hamburger (menu responsivo) */
   .hamburger {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid #fff;
-    cursor: pointer;
-  }
+    display: none; /* Inicialmente oculta o botão hamburger */
+    border: none; /* Remove a borda do botão */
+    background: none; /* Remove o fundo do botão */
+    border-top: 3px solid #fff; /* Adiciona uma linha superior ao botão para criar o ícone */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
   
+/* Estilo para as pseudo-elementos ::before e ::after do botão hamburger */
   .hamburger::after,
   .hamburger::before {
-    content: " ";
-    display: block;
+    content: " "; /* Adiciona conteúdo vazio */
+    display: block; /* Exibe como bloco */
     width: 30px;
     height: 3px;
     background: #fff;
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
-  }
+}
 
   /* Fim do header */
 
 
   /* Início do carrossel */
 
-  section.slider{
-    margin: 0 auto;
+section.slider{
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
     width: 100%;
     height: auto;
-    padding: 0 !important;
-    overflow: hidden;
-    z-index: 1;
-  }
+    padding: 0 !important; /* Remove o preenchimento da seção (importante para sobrescrever outras regras) */
+    overflow: hidden; /* Oculta o conteúdo que excede a largura da seção */
+    z-index: 1; /* Define a ordem de empilhamento */
+}
 
+/* Estilo para os controles de navegação e imagens do carrossel */
+.slider-content input, .img-mobile{
+    display: none; /* Inicialmente oculta os controles e imagens do carrossel */
+}
 
-    .slider-content input, .img-mobile{
-        display: none;
-    }
+/* Estilo para as caixas de slides no carrossel */
+.slide-box{
+    width: 25%; /* Largura de cada caixa de slide */
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s; /* Transição para suavizar mudanças */
+}
 
-    .slide-box{
-        width: 25%;
-        height: auto;
-        position: relative;
-        text-align: center;
-        transition: 1s;
-    }
+/* Estilo para as imagens dentro das caixas de slides */
+.slide-box img{
+    width: 100%; /* Largura total da imagem */
+}
 
-    .slide-box img{
-        width: 100%;
-    }
+/* Estilo para o contêiner do carrossel */
+.slider-content{
+    width: 400%; /* Largura total do conteúdo do carrossel (4 slides) */
+    height: auto;
+    display: flex;
+}
 
-    .slider-content{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
+/* Estilo para a navegação manual e automática do carrossel */
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+}
 
-    .nav-manual, .nav-auto{
-        position: absolute;
-        width: 100%;
-        margin-top: 24%; /* mudar aqui se as bolinhas estiverem em cima das imagens ou muito distante delas */
-        display: flex;
-        justify-content: center;
-    }
+/* Estilo para os botões de navegação manual e os indicadores automáticos do carrossel */
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid rgb(30, 253, 0); /* Borda dos botões e indicadores */
+    padding: 10px; /* Preenchimento dos botões e indicadores */
+    border-radius: 50%; /* Borda arredondada dos botões e indicadores */
+    cursor: pointer;
+    transition: 0.2s;
+}
 
-    .nav-manual .manual-btn, .nav-auto div{
-        border: 1px solid rgb(30, 253, 0);
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.2s;
-    }
+/* Estilo para os botões de navegação manual e indicadores automáticos, exceto o último */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){ 
+    margin-right: 10px; /* Margem à direita para espaçamento uniforme (exceto o último) */
+}                
 
-    .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){  /* para que todos os elementos tenham o mesmo estilo, menos a última bolinha */ 
-        margin-right: 10px;
-    }                
+/* Estilo para o botão manual ao passar o mouse sobre ele */
+.nav-manual .manual-btn:hover{
+    background-color: rgb(30, 253, 0); /* Mudar a cor de fundo ao passar o mouse */
+}
 
-    .nav-manual .manual-btn:hover{
-        background-color: rgb(30, 253, 0);
-    }
-
-    #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {     /* quando estiver marcado */   
-        background-color: rgb(30, 253, 0);
-    }     
+/* Estilo para os indicadores automáticos quando um slide específico está marcado */
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {     /* quando estiver marcado */   
+    background-color: rgb(30, 253, 0); /* Mudar a cor de fundo quando o slide correspondente está marcado */
+}     
     
-    #radio1:checked ~ .primeiro{
-        margin-left: 0%;
-    }
+/* Estilo para a posição dos slides no carrossel quando marcados */
+#radio1:checked ~ .primeiro{
+    margin-left: 0%; /* Mover para a primeira posição quando o slide 1 está marcado */
+}
 
-    #radio2:checked ~ .primeiro{
-        margin-left: -25%;
-    }
+/* Mover para a segunda posição quando o slide 2 está marcado */
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
 
-    #radio3:checked ~ .primeiro{
-        margin-left: -50%;  
-    }
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;  /* Mover para a terceira posição quando o slide 3 está marcado */
+}
 
+/* Fim do carrossel */ 
 
-    /* Fim do carrossel */ 
+/* Início da estilização de todas as seções de produtos */
 
-  
-
-    /* Início da estilização de todas as seções de produtos */
-
+/* Estilo para a seção "cartao-visita-digital" */
 .cartao-visita-digital{
-    margin-left: 10%;
-    margin-top: 3%;
+    margin-left: 10%; /* Margem à esquerda para ajuste de posição */
+    margin-top: 3%; /* Margem superior para ajuste de posição */
     
 }
 
+/* Estilo para as seções "banner" e "itens-utilitarios" */
 .banner, .itens-utilitarios{
-    margin-left: 10%;
+    margin-left: 10%; 
     margin-top: 20px;
 }
 
 /* Estilizando os cards */
 
 .card{
-    width: 20%;
-    /* height: 450px; */
-    border:1px solid #a1a0a0;
-    margin-top: 30px;
-    padding: 10px;
-    margin-left: 15px;
-    display: inline-block;
-    border-radius: 15px;
-    box-sizing: border-box;
-    text-align: center;
+    width: 20%; /* Largura dos cards */
+    border:1px solid #a1a0a0; /* Borda dos cards */
+    margin-top: 30px; /* Margem superior dos cards */
+    padding: 10px; /* Preenchimento dos cards */
+    margin-left: 15px; /* Margem à esquerda dos cards */
+    display: inline-block; /* Exibir como bloco em linha */
+    border-radius: 15px; /* Borda arredondada dos cards */
+    box-sizing: border-box; /* A caixa inclui preenchimento e borda, mas não a margem */
+    text-align: center; /* Alinhamento do texto ao centro nos cards */
 }
 
+/* Estilo para a imagem dentro dos cards */
 .card img{
-    margin-top: 5px;
-    height: 270px;
-    width:30%;
+    margin-top: 5px; /* Margem superior da imagem nos cards */
+    height: 270px; /* Altura da imagem nos cards */
+    width:30%; /* Largura da imagem nos cards */
 }
 
+/* Estilo para a borda ao passar o mouse sobre a imagem nos cards */
 .card img:hover{
-    border:10px double black;
+    border:10px double black; /* Adiciona borda dupla ao passar o mouse sobre a imagem nos cards */
 }
 
+/* Estilo para o título dos cards */
 .card h3{
-    font-size: 1.5vw;
-    margin-top: 10px;
+    font-size: 1.5vw; /* Tamanho da fonte do título nos cards */
+    margin-top: 10px; /* Margem superior do título nos cards */
 }
+
+/* Estilo para o título dos cards ao passar o mouse sobre eles */
 .card h3:hover{
-    color:rgb(0, 255, 21);
+    color:rgb(0, 255, 21); /* Mudar a cor do título ao passar o mouse sobre os cards */
 }
+
+/* Estilo para o parágrafo dos cards */
 .card p{
-    font-family:Tahoma;
-    font-size: 0.9vw;
-    margin-top: 10px;
+    font-family:Tahoma; /* Família da fonte do parágrafo nos cards */
+    font-size: 0.9vw; /* Tamanho da fonte do parágrafo nos cards */
+    margin-top: 10px; /* Margem superior do parágrafo nos cards */
 }
+
+/* Estilo para o botão nos cards */
 .card button{
-    display: block;
-    margin: 10px;
-    margin-left: 25%;
-    background-image: linear-gradient( to right, aqua, purple);
-    color:#fff;
+    display: block; /* Exibe como bloco */
+    margin: 10px; /* Margem geral do botão nos cards */
+    margin-left: 25%; /* Margem à esquerda do botão nos cards */
+    background-image: linear-gradient( to right, aqua, purple); /* Gradiente de fundo do botão nos cards */
+    color:#fff; 
     cursor:pointer;
     width: 50%;
     height: 40px;
     border-radius: 20px;
 }
+
+/* Estilo para os cards ao passar o mouse sobre eles */
 .card:hover{
-    background-image: linear-gradient( to right, rgb(211, 24, 195), bisque);
-    color: #000;
-    font-weight:700;
+    background-image: linear-gradient( to right, rgb(211, 24, 195), bisque); /* Mudar o gradiente de fundo ao passar o mouse sobre os cards */
+    color: #000; /* Mudar a cor do texto ao passar o mouse sobre os cards */
+    font-weight:700; /* Mudar o peso da fonte ao passar o mouse sobre os cards */
 }
+
+/* Estilo para o botão nos cards ao passar o mouse sobre eles */
 .card button:hover{
     
-    color:rgb(0, 255, 21);
-    font-weight:700;
+    color:rgb(0, 255, 21); /* Mudar a cor do texto do botão ao passar o mouse sobre os cards */
+    font-weight:700; /* Mudar o peso da fonte do botão ao passar o mouse sobre os cards */
 }
 /* Fim dos cards */
 
@@ -285,30 +319,28 @@ header {
 /* Início da estilização da seção Sobre */
 
 .sobre{
-    display: flex;
-    height: 200px;
-    width: 77.5%;  
-    margin-top: 80px;
-    margin-left: 10.8%; 
-    background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
-    border-radius: 10px;
-
+    display: flex; /* Exibir como contêiner flexível */
+    height: 200px; /* Altura da seção "sobre" */
+    width: 77.5%;  /* Largura da seção "sobre" */
+    margin-top: 80px; /* Margem superior da seção "sobre" */
+    margin-left: 10.8%; /* Margem à esquerda da seção "sobre" */
+    background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72)); /* Gradiente de fundo da seção "sobre" */
+    border-radius: 10px; /* Borda arredondada da seção "sobre" */
 
 }
 
-
-
-
+/* Estilo para as seções "api" e "contato" */
 .api, .contato{
-    display: flex;
-    height: 300px;
+    display: flex; /* Exibir como contêiner flexível */
+    height: 300px; 
     width: 77.5%;  
     margin-top: 80px;
     margin-left: 10.8%;  
     background: linear-gradient(to bottom, rgba(0, 215, 253, 0.5), rgb(163, 80, 160), rgb(200, 62, 72));
-
     border-radius: 10px;
 }
+
+/* Estilo para o título h1 na seção "sobre" */
 .sobre h1{
     font-size: 40px;
     width: 30%;
@@ -317,6 +349,8 @@ header {
     justify-content: center;
     
 }
+
+/* Estilo para o título h2 na seção "sobre" */
 .sobre h2{
     font-size: 26px;
     width: 65%;
@@ -328,23 +362,27 @@ header {
 
 
 /* Início da seção Contato */
-
+/* Estilo para o formulário na seção "contato" */
 #form {
-    width: 100%;
+    width: 100%; /* Largura total do formulário */
 }
 
+
+/* Estilo para a estrutura interna do formulário na seção "contato" */
 .contato-dentro
   {
-      display: flex;
+    display: flex; /* Exibir como contêiner flexível */
          
   }
 
+  /* Estilo para as colunas no formulário na seção "contato" */
   [class*='col']
   {
-      width:50%;
+    width:50%; /* Largura de cada coluna do formulário */
          
   }
 
+/* Estilo para o título do formulário na seção "contato" */
 #h1-descricao-formulario{
     font-size: 28px;
     padding-top: 30px;
@@ -352,88 +390,94 @@ header {
     display: flex;
     justify-content: center;
 }
+
+/* Estilo para os campos "Nome" e "E-mail" no formulário na seção "contato" */
 .formulario-nome, .formulario-email{
     font-size: 25px;
     margin-top: 10%;
     margin-left: 10%;
 }
+
+/* Estilo para o campo "Nome" no formulário na seção "contato" */
 .formulario-nome input{
     height: 30px;
     width: 45%;
     border-radius: 10px;
     margin-left: 7px;
 }
+
+/* Estilo para o campo "email" no formulário na seção "contato" */
 .formulario-email{
     font-size: 25px;
     margin-top: 10px;
     margin-left: 10%;
 }
+
+/* Estilo para o campo "E-mail" no formulário na seção "contato" */
 .formulario-email input{
     height: 30px;
     width: 45%;
     border-radius: 10px;
 }
 
+/* Estilo para o contêiner do formulário na seção "contato" */
 .formulario-quadrado{
     font-size: 25px;
     margin-top: 4%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /* Direção da disposição dos itens: coluna */
     margin-left: 10%;
 }
 
+/* Estilo para a área de texto no formulário na seção "contato" */
 .formulario-quadrado textarea{
     height: 120px;
     width: 45%;
     border-radius: 10px;
-    resize: none;
+    resize: none; /* Desativar a capacidade de redimensionar a área de texto */
 }
+
+/* Estilo para o botão no formulário na seção "contato" */
 .formulario-botao button{
     font-size: 20px;
     height: 50px;
     width: 30%;
     border-radius: 10px;
     margin-left: -17%;
-    margin-top: -4%
-   
-    
+    margin-top: -4%   
 }
 
 /* Fim da seção Contato */
 
-
-
-
 /* Início da seção Visite-nos */
 
+/* Estilo para o mapa na seção "Visite-nos" */
 .api-posicionamento{
     height: 260px;
     margin-top: 20px;
     margin-left: 5%;
-    width: 150%;
+    width: 150%; /* Largura do mapa na seção "Visite-nos" */
     
 }
 
+/* Estilo para o contêiner da mensagem "Visite-nos" */
 .posicionamento-visite{
 
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Exibir como contêiner flexível */
+    justify-content: center; /* Justificar conteúdo ao centro horizontalmente */
 
 } 
 
+/* Estilo para o título na mensagem "Visite-nos" */
 .posicionamento-visite h1{
-    font-size:2.8vw;
-    margin-top: 130px;
+    font-size:2.8vw; /* Tamanho da fonte do título na mensagem "Visite-nos" */
+    margin-top: 130px; /* Margem superior do título na mensagem "Visite-nos" */
     
 }
 
 /* Fim da seção Visite-nos */
-
-
-
-
 
 /* Inicío do rodapé */
 
@@ -441,74 +485,85 @@ header {
     margin-top: 80px;
     width: 100%;
     height: 170px;
-    background-image: linear-gradient(to left, rgb(14, 6, 59), rgb(197, 59, 167) );
+    background-image: linear-gradient(to left, rgb(14, 6, 59), rgb(197, 59, 167) ); /* Gradiente de fundo da seção do rodapé */
 }
+
+/* Estilo para os itens de lista no rodapé */
 .rodape li{
-    font-size: 1.2vw;
-    margin-left: 165px;
+    font-size: 1.2vw; /* Tamanho da fonte dos itens de lista no rodapé */
+    margin-left: 165px; /* Margem à esquerda dos itens de lista no rodapé */
     margin-top: 10px;
-    width: 100px;
+    width: 100px; /* Largura dos itens de lista no rodapé */
 }
 
+/* Estilo para os links ao passar o mouse nos itens de lista no rodapé */
 .rodape li a:hover{
-    color:rgb(0, 255, 21);
-    font-size: 20px;
+    color:rgb(0, 255, 21); /* Cor ao passar o mouse nos links dos itens de lista no rodapé */
+    font-size: 20px; /* Tamanho da fonte ao passar o mouse nos links dos itens de lista no rodapé */
 }
 
+/* Estilo para os links no rodapé */
 .rodape a{
-    text-decoration: none;
-    color: rgb(255,255,255)
-}
-.nav-topicos{
-    padding-top: 35px;
-    width: 5%;
-    margin-top: -8%;
+    text-decoration: none; /* Remover sublinhado dos links no rodapé */
+    color: rgb(255,255,255); /* Cor dos links no rodapé */
 }
 
+/* Estilo para a navegação de tópicos no rodapé */
+.nav-topicos{
+    padding-top: 35px; /* Preenchimento superior da navegação de tópicos no rodapé */
+    width: 5%; /* Largura da navegação de tópicos no rodapé */
+    margin-top: -8%; /* Margem superior da navegação de tópicos no rodapé */
+}
+
+/* Estilo para a lista de tópicos na navegação de tópicos no rodapé */
 .nav-topicos ul{
-    margin-top: -17%;
-    list-style: url(imagens/folha.png);
+    margin-top: -17%; /* Margem superior da lista de tópicos na navegação de tópicos no rodapé */
+    list-style: url(imagens/folha.png); /* Ícone da lista de tópicos na navegação de tópicos no rodapé */
     
 }
 
-
-
+/* Estilo para as imagens no rodapé */
 .rodape-imagens{
-    display: flex;
-    justify-content: center;
+    display: flex; /* Exibir como contêiner flexível */
+    justify-content: center; /* Justificar conteúdo ao centro horizontalmente */
 
 }
+
+/* Estilo para as imagens individuais no rodapé */
 .rodape-imagens img{
     width: 60px;
     height: 60px;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 41px;
+    padding: 10px; /* Preenchimento das imagens no rodapé */
+    cursor: pointer; /* Cursor ao passar sobre as imagens no rodapé */
+    margin-top: 41px; /* Margem superior das imagens no rodapé */
     
 }
 
-
+/* Estilo para a mensagem de agradecimento no rodapé */
 #rodape-agradecimento{
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Justificar conteúdo ao centro horizontalmente */
     font-size: 25px;
-    margin-top: -27px;
-    width: auto; 
+    margin-top: -27px; /* Margem superior da mensagem de agradecimento no rodapé */
+    width: auto; /* Largura automática da mensagem de agradecimento no rodapé */
 }
 
+/* Copyright no rodapé */
 #rodape-copyright{
-    color: white;
-    display: flex;
-    align-items: center;
+    color: white; /* Cor do texto do copyright no rodapé */
+    display: flex; /* Exibir como contêiner flexível */
+    align-items: center; /* Alinhar itens ao centro */
     font-size: 15px;
-    justify-content: right;
-    margin-right: 14%;
-    margin-top: -3%;
+    justify-content: right; /* Justificar conteúdo à direita horizontalmente */
+    margin-right: 14%; /* Margem à direita do texto do copyright no rodapé */
+    margin-top: -3%; /* Margem superior do texto do copyright no rodapé */
 }
+
+/* Setas no rodapé (a verde)*/
 #setas{
-    display: flex;
-    float: right;
+    display: flex; /* Exibir como contêiner flexível */
+    float: right; /* Alinhar à direita */
     height: 30px;
     width: 30px;
     margin-right: 6%;
@@ -527,23 +582,21 @@ header {
     
     /* Início da responsividade do card na versão notebook */
 
-
+    /* Responsividade do card na versão notebook */
     .card img{
-        margin-top: 5px;
-        height: 270px;
-        width:70%;
+        margin-top: 5px; /* Margem superior da imagem no card na versão notebook */
+        height: 270px; /* Altura da imagem no card na versão notebook */
+        width:70%; /* Largura da imagem no card na versão notebook */
     }
 
 
     #img-estabelecimento{
-        width: 70%;
+        width: 70%; /* Largura da imagem do estabelecimento na versão notebook */
     }    
-
 
     /* Fim da responsividade do card na versão notebook */
 
 }
-
 
 
 /* Fim do Media Query na versão notebook */
@@ -556,118 +609,125 @@ header {
    
     /* Início da responsividade do header */
 
-    .hamburger { /* botão de fechar */
-    margin-top: 6vh;
-    display: block;
-    margin-right: 1vw;
-    z-index: 3;
+    /* Botão de fechar para o menu hamburguer */
+    .hamburger { 
+    margin-top: 6vh; /* Margem superior do botão de fechar */
+    display: block; /* Exibir o botão de fechar */
+    margin-right: 1vw; /* Margem à direita do botão de fechar */
+    z-index: 3; /* Z-index para sobreposição */
     }
 
+    /* Estilo do logo para dispositivos móbile */
     #logo-cliente{
-        margin-left: 3%;
-        height: 200%;
-        width: 45vw;
-        margin-left: -1%;
+        margin-left: 3%; /* Margem à esquerda do logo para dispositivos móbile */
+        height: 200%; /* Altura do logo para dispositivos móbile */
+        width: 45vw; /* Largura do logo para dispositivos móbile */
+        margin-left: -1%; /* Margem à esquerda adicional do logo para dispositivos móbile */
     }
    
-
+    /* Exibição do ícone de favoritos para dispositivos móbile */
    #favoritos{
-       display: block;
+       display: block; /* Exibir o ícone de favoritos para dispositivos móbile */
    }
 
    #id-carrinho{
-       display: none;
+       display: none; /* Ocultar o ícone do carrinho para dispositivos móbile */
        
-
    }
-
+   /* Estilo da caixa de pesquisa para dispositivos móbile */
    .borda-pesquisa{
-        width: 90%;
-        padding-left: 1%;
-        font-size: 2vh;
-        margin-left: -11%;
+        width: 90%; /* Largura da caixa de pesquisa para dispositivos móbile */
+        padding-left: 1%; /* Preenchimento à esquerda da caixa de pesquisa para dispositivos móbile */
+        font-size: 2vh; /* Tamanho da fonte da caixa de pesquisa para dispositivos móbile */
+        margin-left: -11%; /* Margem à esquerda da caixa de pesquisa para dispositivos móbile */
     
    }
 
-
+/* Ajuste da margem direita da barra de pesquisa para dispositivos móbile */
    .barra-pesquisa{
-    margin-right: 2%;
-   }
-
-
+    margin-right: 2%; /* Margem direita da barra de pesquisa para dispositivos móbile */
+}
+    /* Estilo da lista de navegação para dispositivos móbile */
     .nav-list {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 30vh;
-      clip-path: circle(29px at 90% -15%);
-      transition: 1s ease-out;
+      position: fixed; /* Posição fixa para a lista de navegação em dispositivos móbile */
+      top: 0; /* Alinhamento ao topo da página em dispositivos móbile */
+      left: 0; /* Alinhamento à esquerda da página em dispositivos móbile */
+      width: 100%; /* Largura total da lista de navegação em dispositivos móveis */
+      height: 30vh;  /* Altura da lista de navegação em dispositivos móveis */
+      clip-path: circle(27px at 90% -15%); /* Máscara de recorte para o círculo */
+      transition: 1s ease-out; /* Transição suave ao exibir/esconder a lista de navegação em dispositivos móveis */
       background: linear-gradient(to bottom, rgba(131, 85, 204,0.9), rgba(175,85,220,0.9));
-      justify-content: space-around;
+      justify-content: space-around; /* Distribuição uniforme dos itens na lista de navegação em dispositivos móveis */
       gap: 10;
-      pointer-events: none;
-      z-index: 2;
+      pointer-events: none; /* Desativar eventos do mouse/toque para a lista de navegação em dispositivos móveis */
+      z-index: 2; /* Z-index para sobreposição da lista de navegação em dispositivos móveis */
     }
 
+    /* Estilo do link na lista de navegação */
     .nav-list a{
-        font-size: 3vh;
+        font-size: 3vh; /* Tamanho da fonte dos links na lista de navegação */
     }
 
+    /* Ocultar o link "Home" */
     #home{
         display: none;
     }
 
+    /* Estilo da lista de navegação (ul) */
     .nav-list ul{
-        display:list-item;
-        width:100%;
+        display:list-item; /* Exibir como item de lista */
+        width:100%; /* Largura total da lista de navegação */
     }
 
+    /* Centralizar texto na lista de navegação */
     .nav-list ul li{
-        text-align:center;
+        text-align:center; /* Alinhar texto ao centro na lista de navegação */
     }
 
+    /* Transições para os links individuais na lista de navegação */
     .nav-list li:nth-child(1) a {
-      transition: 0.2s;
+      transition: 0.2s; /* Duração da transição para o primeiro link */
       
     }
   
-    .nav-list li:nth-child(2) a {
+    .nav-list li:nth-child(2) a { /* Duração da transição para o segundo link */
       transition:  0.2s;
       
     }
   
     .nav-list li:nth-child(3) a {
-      transition: 0.2s;
+      transition: 0.2s; /* Duração da transição para o terceiro link */
       
     }
   
     /* Estilos ativos */
   
+    /* Estilos ativos para a lista de navegação quando a navegação está ativa */
     .nav.active .nav-list {
-      clip-path: circle(1500px at 90% -15%);
-      pointer-events: all;
+      clip-path: circle(1500px at 90% -15%); /* Máscara de recorte circular expandida, o círculo tem um raio de 1500 pixels,
+       90% -15%: São as coordenadas x e y do centro do círculo em relação ao próprio elemento, 90%: É a coordenada x (horizontal) indica que o centro do círculo será posicionado a 90% da largura do elemento e o -15%: É a coordenada y (vertical) indica que o centro do círculo será posicionado 15% acima da altura do elemento. */
+      pointer-events: all; /* Ativar eventos do mouse/toque para a lista de navegação */
     }
   
     .nav.active .nav-list a {
-      opacity: 1;
-      font-size: 4vh;
+      opacity: 1; /* Opacidade máxima para os links da lista de navegação */
+      font-size: 4vh; /* Tamanho da fonte aumentado para os links da lista de navegação */
     }
   
     .nav.active .hamburger { 
-      position: fixed;
-      top: 26px;
-      right: 16px;
-      border-top-color: transparent;
+      position: fixed; /* Posição fixa para o botão de hamburguer quando a navegação está ativa */
+      top: 26px; /* Distância superior do botão de hamburguer quando a navegação está ativa */
+      right: 16px; /* Distância direita do botão de hamburguer quando a navegação está ativa */
+      border-top-color: transparent; /* Cor transparente para a borda superior do botão de hamburguer quando a navegação está ativa */
     }
   
     .nav.active .hamburger::before {
-      transform: rotate(135deg);
+      transform: rotate(135deg);  /* Rotação do pseudo elemento antes do botão de hamburguer quando a navegação está ativa */
     }
   
-    .nav.active .hamburger::after {
-      transform: rotate(-135deg);
-      top: -7px;
+    .nav.active .hamburger::after { 
+      transform: rotate(-135deg); /* Rotação do pseudo elemento após o botão de hamburguer quando a navegação está ativa */
+      top: -7px; /* Ajuste da posição superior após o botão de hamburguer quando a navegação está ativa */
     }
 
     /* Fim da responsividade do header */
@@ -676,54 +736,50 @@ header {
     /* Início da responsividade do carrossel */
 
     .img-desktop{
-        display: none;
+        display: none; /* Ocultar imagem para desktop */
     }
 
     .img-mobile{
-        display: block;
+        display: block; /* Exibir imagem para dispositivos móveis */
     }
 
     .nav-auto, .nav-manual{
-        margin-top: 68%;
+        margin-top: 68%; /* Ajuste da margem superior para os controles do carrossel em dispositivos móveis */
     }
 
     /* Fim da responsividade do carrossel */
 
-
-    
     /* Início da responsividade dos cards */ 
 
 
     .card{
-        margin-left: 0;
-        max-width: auto;
-        width:90%;
+        margin-left: 0; /* Remover margem esquerda para os cards */
+        max-width: auto; /* Largura máxima automática para os cards */
+        width:90%; /* Largura dos cards em dispositivos móveis */
         
     }
 
     .card img{
-        width: 60%;
-    }
-
-    
+        width: 60%; /* Largura da imagem dos cards em dispositivos móveis */
+    }    
 
     /* Fim da responsividade dos cards */
-
-
 
     /* Início da responsividade da seção que contém os cards */
 
    .cartao-visita-digital, .banner, .itens-utilitarios{
-        margin-left: 11%;
-        margin-top: 16%;
+        margin-left: 11%; /* Ajuste da margem esquerda para as seções que contêm os cards */
+        margin-top: 16%; /* Ajuste da margem superior para as seções que contêm os cards */
+
    } 
 
    .card p{
-       font-size:2.5vh;
+       font-size:2.5vh; /* Tamanho da fonte do texto nos cards em dispositivos móveis */
+    
    }
 
    .card h3{
-       font-size:3.5vh;
+       font-size:3.5vh; /* Tamanho da fonte do título nos cards em dispositivos móveis */
    }
 
    .card button{
@@ -733,22 +789,18 @@ header {
 
    /* Fim da responsividade da seção que contém os cards */
 
-
-
-
-
     /* Início da responsividade da seção Sobre */
 
     #section-sobre {
-        width: 100%;
-        margin-left: 0vw;
-        display: table;
-        height: 40vh;
+        width: 100%; /* Largura total para a seção Sobre em dispositivos móveis */
+        margin-left: 0vw; /* Ajuste da margem esquerda para a seção Sobre em dispositivos móveis */
+        display: table; /* Exibir como tabela em dispositivos móveis */
+        height: 40vh; /* Altura da seção Sobre em dispositivos móveis */
       }
       
       
     #h1-titulo {
-        font-size: 5vh;
+        font-size: 5vh; /* Tamanho da fonte do título na seção Sobre em dispositivos móveis */
         width: 100%;
         margin-top: 15px;
       }
@@ -756,7 +808,7 @@ header {
     #h2-texto{
         margin-top: 4vh;
         margin-left: 5vw;
-        width: 90%;
+        width: 90%; /* Largura do texto na seção Sobre em dispositivos móveis */
     }
 
     /* Fim da responsividade da seção Sobre */
@@ -766,13 +818,10 @@ header {
        
     #section-api{
         width: 100%;
-        margin-left: 0vw;
-        display: table;        
-        
-        
+        margin-left: 0vw; /* Ajuste da margem esquerda para a seção Visite-nos em dispositivos móveis */
+        display: table; /* Exibir como tabela em dispositivos móveis */
     }
     
-
     #h1-visite-nos{
         font-size: 5vh;
         margin-top: 0vh;
@@ -785,9 +834,7 @@ header {
         margin-left: 13vw;
         height: 35vh;
         width: 70vw;
-        margin-top: 3vh;
-        
-        
+        margin-top: 3vh;    
     }
 
     /* Fim da responsividade da seção Visite-nos */
@@ -802,98 +849,81 @@ header {
 
     [class*='col']
     {
-        width:100%;
+        width:100%; /* Largura total para as colunas na seção Contato em dispositivos móveis */
     }
-
 
     .contato{
         width: 100%;
         margin-left: 0vw;
-        height: auto;
+        height: auto; /* Altura automática para a seção Contato em dispositivos móveis */
     }
 
     .formulario-botao{
         margin-top: 1%;
-        margin-bottom: 5%; /* criar um id na seção ultima seção para diminuir o margem top , ou por negativo para ficar mais proximos das outras categorias*/
+        margin-bottom: 5%; 
         margin-left: 50%;
-        
-        
     }
 
     .formulario-botao button{
         font-size: 6vw;
-        width: 39%;
-        margin-top: 5%
-        
+        width: 39%; /* Largura do botão na seção Contato em dispositivos móveis */
+        margin-top: 5%        
     }
 
     .formulario-quadrado{
-        margin-left: 0%;
+        margin-left: 0%; /* Ajuste da margem esquerda para o quadrado na seção Contato em dispositivos móveis */
     }
 
-
     /* Fim da responsividade da seção Contato */
-
 
 
     /* Início da responsividade da seção Rodape */
 
 
     .rodape{
-        height: 1%;
+        height: 1%; /* Altura mínima para a seção Rodapé em dispositivos móveis */
     }
 
     .nav-topicos ul{
-        margin-top: -5%;
+        margin-top: -5%; /* Ajuste da margem superior para a lista de tópicos no Rodapé em dispositivos móveis */
     }
 
-    .rodape li{
-        
-        font-size: 6vw;
-        margin-left: 10%;
-        width: 30%;
-    
+    .rodape li{        
+        font-size: 6vw; /* Tamanho da fonte para os itens de lista no Rodapé em dispositivos móveis */
+        margin-left: 10%;  /* Ajuste da margem esquerda para os itens de lista no Rodapé em dispositivos móveis */
+        width: 30%; /* Largura dos itens de lista no Rodapé em dispositivos móveis */
     }
 
     .rodape-imagens img{
-        margin-top: 0%;
+        margin-top: 0%; /* Ajuste da margem superior para as imagens no Rodapé em dispositivos móveis */
     }
 
     .rodape li a:hover{
-        color:rgb(91, 224, 64);
-        font-size: 4.8vw;
+        color:rgb(91, 224, 64); /* Cor ao passar o mouse sobre os links no Rodapé em dispositivos móveis */ 
+        font-size: 4.8vw; /* Tamanho da fonte ao passar o mouse sobre os links no Rodapé em dispositivos móveis */
     }
 
     .nav-topicos{
-        width: 100%;
-        margin-top: -4%;
+        width: 100%; /* Largura total para a navegação no Rodapé em dispositivos móveis */
+        margin-top:-4%; /* Ajuste da margem superior para a navegação no Rodapé em dispositivos móveis */
     }
 
-  
     .links-rodape .nav-topicos .ul .li .a{
-        margin-top: 10px;
+        margin-top: 10px; /* Ajuste da margem superior para os links no Rodapé em dispositivos móveis */
     }
     
-    
-
     #rodape-agradecimento{
-        display: none;
+        display: none; /* Ocultar o agradecimento no Rodapé em dispositivos móveis */
     }
 
     #rodape-copyright{
-        display: flex;
+        display: flex; /* Exibir como flexível, o copyright no Rodapé em dispositivos móveis */
         align-items: center;
         margin-right: 25%;
         font-size: 2vh;
-        margin-top: 6%;
-        
-        
+        margin-top: 6%;   
     }
-
-
     /* Fim da responsividade da seção Rodape */
-
-
 }
 
 /* Fim do Media Query mobile */
