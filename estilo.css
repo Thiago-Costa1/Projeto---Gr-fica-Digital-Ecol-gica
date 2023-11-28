@@ -102,8 +102,8 @@ header {
 /* Estilo para o campo de pesquisa na barra de pesquisa */
 .borda-pesquisa{
     border-radius: 25px; /* Raio da borda do campo de pesquisa */
-    padding-left: 25px; /* Espaçamento interno à esquerda do campo de pesquisa */
     width: 100%;  /* Largura total do campo de pesquisa */
+    
 }
 
 /* Estilo para o ícone do carrinho de compras */
@@ -573,11 +573,41 @@ section.slider{
 
 /* Fim do rodapé */
 
+/* Início do Media Query versão mini notebook */
 
- /* Início do Media Query versão notebook */
+@media only screen and (min-width: 1061px) and (max-width: 1249px){
+
+        .card img{
+            width: 80%;
+        }
+
+        .card p{
+            font-size: 1.2vw;
+        }
+
+        #rodape-copyright{
+            margin-right: 10%;
+        }
+
+        #rodape-agradecimento{
+            margin-top: -18px;
+        }
+
+        .nav-topicos ul{
+            margin-top: -64%;
+        }
+}
  
 
-@media only screen and (min-width: 651px) and (max-width:1366px){
+/* Fim do Media Query versão mini notebook */
+
+
+
+
+ /* Início do Media Query versão desktop, notebook */
+ 
+
+@media only screen and (min-width: 1250px) and (max-width:1366px){
 
     
     /* Início da responsividade do card na versão notebook */
