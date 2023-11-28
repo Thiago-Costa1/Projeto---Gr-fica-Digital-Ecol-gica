@@ -49,7 +49,7 @@ header {
 }
 /* Estilo para o logotipo do cliente no cabeçalho */
     #logo-cliente{   
-    height: 200%; /* Altura do logotipo do cliente */
+    height: 150%; /* Altura do logotipo do cliente */
     width: 15%; /* Largura do logotipo do cliente */
     margin-top: 48px; /* Margem superior do logotipo do cliente */
     margin-left: 10%; /* Margem à esquerda do logotipo do cliente */
@@ -620,7 +620,7 @@ section.slider{
     /* Estilo do logo para dispositivos móbile */
     #logo-cliente{
         margin-left: 3%; /* Margem à esquerda do logo para dispositivos móbile */
-        height: 200%; /* Altura do logo para dispositivos móbile */
+        height: 150%; /* Altura do logo para dispositivos móbile */
         width: 45vw; /* Largura do logo para dispositivos móbile */
         margin-left: -1%; /* Margem à esquerda adicional do logo para dispositivos móbile */
     }
