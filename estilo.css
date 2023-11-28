@@ -557,7 +557,7 @@ section.slider{
     font-size: 15px;
     justify-content: right; /* Justificar conteúdo à direita horizontalmente */
     margin-right: 14%; /* Margem à direita do texto do copyright no rodapé */
-    margin-top: -3%; /* Margem superior do texto do copyright no rodapé */
+    margin-top: -2%; /* Margem superior do texto do copyright no rodapé */
 }
 
 /* Setas no rodapé (a verde)*/
@@ -649,10 +649,11 @@ section.slider{
 
     /* Estilo do logo para dispositivos móbile */
     #logo-cliente{
-        margin-left: 3%; /* Margem à esquerda do logo para dispositivos móbile */
-        height: 150%; /* Altura do logo para dispositivos móbile */
-        width: 45vw; /* Largura do logo para dispositivos móbile */
+       
+        height: 155%; /* Altura do logo para dispositivos móbile */
+        width: 51vw; /* Largura do logo para dispositivos móbile */
         margin-left: -1%; /* Margem à esquerda adicional do logo para dispositivos móbile */
+        margin-top: 64px;
     }
    
     /* Exibição do ícone de favoritos para dispositivos móbile */
@@ -666,10 +667,10 @@ section.slider{
    }
    /* Estilo da caixa de pesquisa para dispositivos móbile */
    .borda-pesquisa{
-        width: 90%; /* Largura da caixa de pesquisa para dispositivos móbile */
+        width: 23vw; /* Largura da caixa de pesquisa para dispositivos móbile */
         padding-left: 1%; /* Preenchimento à esquerda da caixa de pesquisa para dispositivos móbile */
         font-size: 2vh; /* Tamanho da fonte da caixa de pesquisa para dispositivos móbile */
-        margin-left: -11%; /* Margem à esquerda da caixa de pesquisa para dispositivos móbile */
+        
     
    }
 
@@ -756,7 +757,7 @@ section.slider{
     }
   
     .nav.active .hamburger::after { 
-      transform: rotate(-135deg); /* Rotação do pseudo elemento após o botão de hamburguer quando a navegação está ativa */
+      transform: rotate(-135deg); /* Roapós tação do pseudo elemento o botão de hamburguer quando a navegação está ativa */
       top: -7px; /* Ajuste da posição superior após o botão de hamburguer quando a navegação está ativa */
     }
 
