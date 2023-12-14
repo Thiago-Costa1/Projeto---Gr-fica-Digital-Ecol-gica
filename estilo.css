@@ -479,103 +479,80 @@ section.slider{
 
 /* Fim da seção Visite-nos */
 
-/* Inicío do rodapé */
 
-.rodape{
-    margin-top: 80px;
-    width: 100%;
-    height: 170px;
-    background-image: linear-gradient(to left, rgb(14, 6, 59), rgb(197, 59, 167) ); /* Gradiente de fundo da seção do rodapé */
-}
+/* Início do rodapé */
 
-/* Estilo para os itens de lista no rodapé */
-.rodape li{
-    font-size: 1.2vw; /* Tamanho da fonte dos itens de lista no rodapé */
-    margin-left: 165px; /* Margem à esquerda dos itens de lista no rodapé */
-    margin-top: 10px;
-    width: 100px; /* Largura dos itens de lista no rodapé */
-}
+footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-top: 80px;
+      background-image: linear-gradient(to left, rgb(14, 6, 59), rgb(197, 59, 167) );
+    }
 
-/* Estilo para os links ao passar o mouse nos itens de lista no rodapé */
-.rodape li a:hover{
-    color:rgb(0, 255, 21); /* Cor ao passar o mouse nos links dos itens de lista no rodapé */
-    font-size: 20px; /* Tamanho da fonte ao passar o mouse nos links dos itens de lista no rodapé */
-}
+    .links li a:hover{
+        color:rgb(0, 255, 21); 
+        
+    }
 
-/* Estilo para os links no rodapé */
-.rodape a{
-    text-decoration: none; /* Remover sublinhado dos links no rodapé */
-    color: rgb(255,255,255); /* Cor dos links no rodapé */
-}
+    #agradecimento {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 22px;       
+      }
 
-/* Estilo para a navegação de tópicos no rodapé */
-.nav-topicos{
-    padding-top: 35px; /* Preenchimento superior da navegação de tópicos no rodapé */
-    width: 5%; /* Largura da navegação de tópicos no rodapé */
-    margin-top: -8%; /* Margem superior da navegação de tópicos no rodapé */
-}
+    .links {
+        margin-left: 9.5%;
 
-/* Estilo para a lista de tópicos na navegação de tópicos no rodapé */
-.nav-topicos ul{
-    margin-top: -17%; /* Margem superior da lista de tópicos na navegação de tópicos no rodapé */
-    list-style: url(imagens/folha.png); /* Ícone da lista de tópicos na navegação de tópicos no rodapé */
+      }
+
+    .links ul{
+        list-style: none;
+    }
+
+    .links a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      
+    }
+
+    .social {
+      margin-left: 8%;
+    }
+
+    .social img {
+      width: 60px;
+      height: 60px;
+      padding: 10px;  
+      cursor: pointer
+    }
+
+    #copy{
+        margin-top: 80px;
+        font-size: 13px;
+    }
     
-}
-
-/* Estilo para as imagens no rodapé */
-.rodape-imagens{
-    display: flex; /* Exibir como contêiner flexível */
-    justify-content: center; /* Justificar conteúdo ao centro horizontalmente */
-
-}
-
-/* Estilo para as imagens individuais no rodapé */
-.rodape-imagens img{
-    width: 60px;
-    height: 60px;
-    padding: 10px; /* Preenchimento das imagens no rodapé */
-    cursor: pointer; /* Cursor ao passar sobre as imagens no rodapé */
-    margin-top: 41px; /* Margem superior das imagens no rodapé */
+    #img-seta{
+        height: 30px;
+        width: 30px;
+        margin-top: 40px;
+        margin-left: -100%;
+        cursor: pointer;
+    }
     
-}
+  
+    /* Fim do rodapé */
 
-/* Estilo para a mensagem de agradecimento no rodapé */
-#rodape-agradecimento{
-    color: white;
-    display: flex;
-    justify-content: center; /* Justificar conteúdo ao centro horizontalmente */
-    font-size: 25px;
-    margin-top: -27px; /* Margem superior da mensagem de agradecimento no rodapé */
-    width: auto; /* Largura automática da mensagem de agradecimento no rodapé */
-}
-
-/* Copyright no rodapé */
-#rodape-copyright{
-    color: white; /* Cor do texto do copyright no rodapé */
-    display: flex; /* Exibir como contêiner flexível */
-    align-items: center; /* Alinhar itens ao centro */
-    font-size: 15px;
-    justify-content: right; /* Justificar conteúdo à direita horizontalmente */
-    margin-right: 14%; /* Margem à direita do texto do copyright no rodapé */
-    margin-top: -2%; /* Margem superior do texto do copyright no rodapé */
-}
-
-/* Setas no rodapé (a verde)*/
-#setas{
-    display: flex; /* Exibir como contêiner flexível */
-    float: right; /* Alinhar à direita */
-    height: 30px;
-    width: 30px;
-    margin-right: 6%;
-    margin-top: -40px;  
-    color: white;
-}
-
-/* Fim do rodapé */
 
 /* Início do Media Query versão mini notebook */
 
-@media only screen and (min-width: 1061px) and (max-width: 1249px){
+@media only screen and (min-width: 800px) and (max-width: 1249px){
 
         .card img{
             width: 80%;
@@ -585,17 +562,6 @@ section.slider{
             font-size: 1.2vw;
         }
 
-        #rodape-copyright{
-            margin-right: 10%;
-        }
-
-        #rodape-agradecimento{
-            margin-top: -18px;
-        }
-
-        .nav-topicos ul{
-            margin-top: -64%;
-        }
 }
  
 
