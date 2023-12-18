@@ -877,50 +877,59 @@ footer {
     /* Início da responsividade da seção Rodape */
 
 
-    .rodape{
-        height: 1%; /* Altura mínima para a seção Rodapé em dispositivos móveis */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
     }
 
-    .nav-topicos ul{
-        margin-top: -5%; /* Ajuste da margem superior para a lista de tópicos no Rodapé em dispositivos móveis */
+    .links ul{
+        margin-top: 33%;
+        margin-left: -7%;
     }
 
-    .rodape li{        
-        font-size: 6vw; /* Tamanho da fonte para os itens de lista no Rodapé em dispositivos móveis */
-        margin-left: 10%;  /* Ajuste da margem esquerda para os itens de lista no Rodapé em dispositivos móveis */
-        width: 30%; /* Largura dos itens de lista no Rodapé em dispositivos móveis */
+    .links li{
+        font-size: 6vw;
+    }
+    .social {
+        margin-left: 9%;
+        position: absolute;
     }
 
-    .rodape-imagens img{
-        margin-top: 0%; /* Ajuste da margem superior para as imagens no Rodapé em dispositivos móveis */
+    .social img{
+        width: 21%;
+        height: auto;
     }
 
-    .rodape li a:hover{
-        color:rgb(91, 224, 64); /* Cor ao passar o mouse sobre os links no Rodapé em dispositivos móveis */ 
-        font-size: 4.8vw; /* Tamanho da fonte ao passar o mouse sobre os links no Rodapé em dispositivos móveis */
+    #img-seta {
+        margin-top: -5%; /* Mova a seta para o final do contêiner */
+        margin-left: 84%;
     }
 
-    .nav-topicos{
-        width: 100%; /* Largura total para a navegação no Rodapé em dispositivos móveis */
-        margin-top:-4%; /* Ajuste da margem superior para a navegação no Rodapé em dispositivos móveis */
+    #copy{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 4.2vw;
     }
 
-    .links-rodape .nav-topicos .ul .li .a{
-        margin-top: 10px; /* Ajuste da margem superior para os links no Rodapé em dispositivos móveis */
+    #agradecimento {
+        display: none;
     }
+
+  }
+   
+
     
-    #rodape-agradecimento{
-        display: none; /* Ocultar o agradecimento no Rodapé em dispositivos móveis */
-    }
 
-    #rodape-copyright{
-        display: flex; /* Exibir como flexível, o copyright no Rodapé em dispositivos móveis */
-        align-items: center;
-        margin-right: 25%;
-        font-size: 2vh;
-        margin-top: 6%;   
-    }
+    
+    
+
+      
+        
+
+    
     /* Fim da responsividade da seção Rodape */
-}
+
 
 /* Fim do Media Query mobile */
