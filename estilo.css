@@ -533,17 +533,22 @@ footer {
       cursor: pointer
     }
 
+    .copyright-img{
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+        margin-top: 30px;
+        gap: 43px;
+    }
     #copy{
-        margin-top: 80px;
         font-size: 13px;
     }
     
     #img-seta{
         height: 30px;
         width: 30px;
-        margin-top: 40px;
-        margin-left: -100%;
         cursor: pointer;
+        margin-right: -35px;
     }
     
   
@@ -883,53 +888,40 @@ footer {
         align-items: normal;
     }
 
-    .links ul{
-        margin-top: 33%;
-        margin-left: -7%;
+    .links{
+        margin-top: 33px;
+        margin-left: 3%;
     }
 
     .links li{
         font-size: 6vw;
     }
-    .social {
-        margin-left: 9%;
-        position: absolute;
-    }
-
-    .social img{
-        width: 21%;
-        height: auto;
-    }
-
-    #img-seta {
-        margin-top: -5%; /* Mova a seta para o final do contêiner */
-        margin-left: 84%;
-    }
-
     #copy{
         display: flex;
-        width: 100%;
+        margin-top:0;
+    }
+    .social {
+        display: flex;
         justify-content: center;
-        font-size: 4.2vw;
+        margin-left: 0;
+        order: -1;
+    }
+    .copyright-img{
+        display: flex;
+        justify-content: center;
+        margin-top: 33px;
+        gap:15%;
     }
 
+    #img-seta{
+        margin-left:0;
+        margin-top:0;
+    }
     #agradecimento {
         display: none;
     }
 
-  }
-   
-
-    
-
-    
-    
-
-      
-        
-
-    
+  }    
     /* Fim da responsividade da seção Rodape */
-
 
 /* Fim do Media Query mobile */
