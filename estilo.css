@@ -45,7 +45,7 @@ header {
 }
 /* Estilo para a barra de pesquisa no cabeçalho */
   .barra-pesquisa{
-    margin-left: 3%; /* Margem à esquerda da barra de pesquisa */
+    margin-left: 2%; /* Margem à esquerda da barra de pesquisa */
 }
 /* Estilo para o logotipo do cliente no cabeçalho */
     #logo-cliente{   
@@ -58,10 +58,9 @@ header {
 /* Estilo para a lista de navegação no cabeçalho */
   .nav-list ul{
     display: flex; /* Exibir os itens da lista em linha */
-    /*gap: 40px; /* Espaçamento entre os itens da lista */
     list-style: none; /* Remover os marcadores de lista */
     margin-top: 45px; /* Margem superior da lista de navegação */
-    margin-left: 5.5%; /* Margem à esquerda da lista de navegação */
+    margin-left: 1%; /* Margem à esquerda da lista de navegação */
     
 }
 /* Estilo para o logo do "Carrinho" que é inicialmente oculto */
@@ -73,7 +72,7 @@ header {
   .nav-list a {
     font-size: 2.6vw; /* Tamanho da fonte dos links na navegação */
     color: #fff; /* Cor do texto dos links */
-    padding: 12px;
+    padding: 18px;
     
 }
  
@@ -88,7 +87,6 @@ header {
     display: flex; /* Exibir a barra de pesquisa como um contêiner flexível */
     height: 25px; /* Altura da barra de pesquisa */
     margin-top: 43px; /* Margem superior da barra de pesquisa */
-    margin-right: 8%; /* Margem à direita da barra de pesquisa */
 
 }
 /* Estilo para o ícone de lupa na barra de pesquisa */
@@ -561,13 +559,29 @@ footer {
 @media only screen and (min-width: 800px) and (max-width: 1249px){
 
         .card img{
-            width: 80%;
+            width: 88%;
+            height: 150px;
         }
 
         .card p{
             font-size: 1.2vw;
         }
 
+        .barra-pesquisa{
+            margin-left: 1%;
+        }
+
+        .nav-list a {
+            padding: 13px;  
+        }
+
+        .nav-list ul{
+            margin-left: 0;
+        }
+        
+        .borda-pesquisa{
+            width: 45%;
+        }
 }
  
 
