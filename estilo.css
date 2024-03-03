@@ -556,7 +556,7 @@ footer {
 
 /* Início do Media Query versão mini notebook */
 
-@media only screen and (min-width: 800px) and (max-width: 1249px){
+@media only screen and (min-width: 800px) and (max-width: 1185px){
 
         .card img{
             width: 88%;
@@ -593,7 +593,7 @@ footer {
  /* Início do Media Query versão desktop, notebook */
  
 
-@media only screen and (min-width: 1250px) and (max-width:1366px){
+@media only screen and (min-width: 1186px) and (max-width:1366px){
 
     
     /* Início da responsividade do card na versão notebook */
