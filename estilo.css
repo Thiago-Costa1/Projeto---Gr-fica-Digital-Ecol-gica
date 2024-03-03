@@ -17,7 +17,7 @@ body{
 
 }
 
-/* Início do header (cabeçalho, menu) */
+/* Início do header */
  
 /* Estilo padrão para links */
 a {
@@ -39,7 +39,7 @@ header {
     height: 70px; /* Altura da navegação */
     display: flex; /* Exibir os itens da navegação em linha */
     align-items: center; /* Alinhar itens no centro */
-    justify-content: space-around; /* Distribuir espaço uniformemente entre os itens */
+    /*justify-content: space-around; /* Distribuir espaço uniformemente entre os itens */
     
 
 }
@@ -58,7 +58,7 @@ header {
 /* Estilo para a lista de navegação no cabeçalho */
   .nav-list ul{
     display: flex; /* Exibir os itens da lista em linha */
-    gap: 40px; /* Espaçamento entre os itens da lista */
+    /*gap: 40px; /* Espaçamento entre os itens da lista */
     list-style: none; /* Remover os marcadores de lista */
     margin-top: 45px; /* Margem superior da lista de navegação */
     margin-left: 5.5%; /* Margem à esquerda da lista de navegação */
@@ -73,13 +73,14 @@ header {
   .nav-list a {
     font-size: 2.6vw; /* Tamanho da fonte dos links na navegação */
     color: #fff; /* Cor do texto dos links */
+    padding: 12px;
     
 }
  
 /* Estilo para os links na lista de navegação ao passar o mouse sobre eles */
   .nav-list li a:hover{
     color:rgb(0, 255, 21); /* Mudar a cor do texto ao passar o mouse */
-    font-size: 30px;  /* Mudar o tamanho da fonte ao passar o mouse */
+    
 }
   
 /* Estilo para a barra de pesquisa no cabeçalho */
