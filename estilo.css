@@ -683,6 +683,7 @@ footer {
     /* Estilo do link na lista de navegação */
     .nav-list a{
         font-size: 3vh; /* Tamanho da fonte dos links na lista de navegação */
+        padding: 0;
     }
 
     /* Ocultar o link "Home" */
