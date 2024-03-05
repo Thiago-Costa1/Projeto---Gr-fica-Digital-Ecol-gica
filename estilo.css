@@ -636,10 +636,10 @@ footer {
     /* Estilo do logo para dispositivos móbile */
     #logo-cliente{
        
-        height: 155%; /* Altura do logo para dispositivos móbile */
-        width: 51vw; /* Largura do logo para dispositivos móbile */
-        margin-left: -1%; /* Margem à esquerda adicional do logo para dispositivos móbile */
-        margin-top: 64px;
+        height: 135%; /* Altura do logo para dispositivos móbile */
+        width: 47vw; /* Largura do logo para dispositivos móbile */
+        margin-left: 4%; /* Margem à esquerda adicional do logo para dispositivos móbile */
+        margin-top: 46px;
     }
    
     /* Exibição do ícone de favoritos para dispositivos móbile */
