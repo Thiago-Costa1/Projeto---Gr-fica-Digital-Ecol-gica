@@ -944,6 +944,14 @@ footer {
         .card img{
             width: 75%;
         }
+        #paragrafo1
+        {
+            font-size: 1.9vh;
+        }
+        #paragrafo2
+        {
+            font-size: 1.9vh;
+        }
     }
     
 
